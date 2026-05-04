@@ -1,0 +1,32 @@
+{
+  "name": "mindcherrywebsitenjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.0.14",
+    "@sanity/client": "^6.12.1",
+    "@sanity/image-url": "^1.0.2",
+    "framer-motion": "^11.0.3",
+    "next": "16.2.4",
+    "next-image-export-optimizer": "^1.18.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

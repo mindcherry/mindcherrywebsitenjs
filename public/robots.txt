@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mindcherry.com/sitemap.xml
+
+# Specific rules
+Disallow: /admin
+Disallow: /*.json$
+Disallow: /api/
