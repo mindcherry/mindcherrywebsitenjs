@@ -1,0 +1,65 @@
+[
+  {
+    "path": "public/images/hero/atmosphere.jpg",
+    "id": 17073764,
+    "photographer": "Brandon Ricketts",
+    "alt": "Sunlit interior with shadows on chairs and table by a window.",
+    "page": "https://www.pexels.com/photo/empty-chair-behind-table-edge-17073764/"
+  },
+  {
+    "path": "public/images/process/01-discover.jpg",
+    "id": 4238498,
+    "photographer": "Ivan S",
+    "alt": "Close-up of a designer sketching ideas in a spiral notebook at a desk, highlighting creativity.",
+    "page": "https://www.pexels.com/photo/person-sketching-on-a-notebook-4238498/"
+  },
+  {
+    "path": "public/images/process/02-architect.jpg",
+    "id": 6614748,
+    "photographer": "Tima Miroshnichenko",
+    "alt": "Explore detailed architectural sketches and designs on a spiral notepad with a mechanical pencil.",
+    "page": "https://www.pexels.com/photo/mechanical-pencil-on-notepad-with-sketch-6614748/"
+  },
+  {
+    "path": "public/images/process/03-build.jpg",
+    "id": 6424585,
+    "photographer": "Nemuel Sereti",
+    "alt": "Close-up of a computer screen displaying colorful programming code in JavaScript.",
+    "page": "https://www.pexels.com/photo/computer-program-on-the-monitor-6424585/"
+  },
+  {
+    "path": "public/images/process/04-scale.jpg",
+    "id": 5050305,
+    "photographer": "Brett Sayles",
+    "alt": "From above contemporary server cable trays without wires located in modern data center",
+    "page": "https://www.pexels.com/photo/high-angle-shot-of-network-switch-5050305/"
+  },
+  {
+    "path": "public/images/work/arcadia.jpg",
+    "id": 5550170,
+    "photographer": "Vlad Muset",
+    "alt": "Urban apartment buildings with glowing windows at twilight, capturing the city vibe.",
+    "page": "https://www.pexels.com/photo/windows-of-apartment-buildings-in-dowtown-5550170/"
+  },
+  {
+    "path": "public/images/work/mindwell.jpg",
+    "id": 7749046,
+    "photographer": "Max Vakhtbovych",
+    "alt": "Inviting minimalist bedroom interior with a cozy atmosphere, featuring a soft bed and elegant side lamp.",
+    "page": "https://www.pexels.com/photo/black-and-white-table-lamp-on-brown-wooden-table-beside-bed-7749046/"
+  },
+  {
+    "path": "public/images/people/whiteboarding.jpg",
+    "id": 17724734,
+    "photographer": "Walls.io",
+    "alt": "Two colleagues collaborate on a whiteboard presentation, generating creative ideas.",
+    "page": "https://www.pexels.com/photo/back-view-of-woman-and-man-writing-on-whiteboard-17724734/"
+  },
+  {
+    "path": "public/images/people/founder.jpg",
+    "id": 13846124,
+    "photographer": "Design _InDepth",
+    "alt": "Hands writing on a marketing book under the warm glow of a desk lamp at night.",
+    "page": "https://www.pexels.com/photo/a-person-writing-in-book-13846124/"
+  }
+]

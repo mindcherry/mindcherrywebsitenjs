@@ -1,115 +1,159 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Button from './Button'
+import Wordmark from './Wordmark'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/portfolio', label: 'Work' },
+  { href: '/about', label: 'About' },
+  { href: '/blog', label: 'Journal' },
   { href: '/contact', label: 'Contact' },
 ]
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  // close mobile menu on route change
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
+
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 dark:bg-dark-bg/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* Logo */}
+    <header
+      className={cn(
+        'sticky top-0 z-50 transition-[backdrop-filter,background-color,border-color] duration-500',
+        scrolled
+          ? 'bg-paper/80 backdrop-blur-md border-b border-ink/10'
+          : 'bg-transparent border-b border-transparent',
+      )}
+      style={{ '--color-paper': '#F5F2EA' } as React.CSSProperties}
+    >
+      <div className="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
+        <div className="flex items-center h-16 sm:h-[72px]">
           <Link
             href="/"
-            className="flex-shrink-0 font-bold text-xl sm:text-2xl text-primary hover:text-primary-600 transition-colors"
+            aria-label="MindCherry — home"
+            className="group flex items-center gap-3 mr-auto"
           >
-            MindCherry
+            <Wordmark height={26} />
+            <span className="hidden sm:inline-flex items-center gap-2 pl-3 ml-1 border-l border-ink/15 text-[11px] font-mono uppercase tracking-[0.18em] text-ash">
+              <span className="live-dot" aria-hidden />
+              Studio · Lahore
+            </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8 lg:gap-10">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'px-5 lg:px-6 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap',
-                  pathname === link.href
-                    ? 'bg-primary/10 text-primary'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary'
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          <nav className="hidden md:flex items-center gap-1">
+            {navLinks.map((link) => {
+              const active = pathname === link.href
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    'group relative px-4 py-2 text-[13px] font-medium tracking-tight transition-colors',
+                    active ? 'text-ink' : 'text-ink/65 hover:text-ink',
+                  )}
+                >
+                  <span className="relative z-10">{link.label}</span>
+                  <span
+                    aria-hidden
+                    className={cn(
+                      'absolute left-4 right-4 bottom-1 h-px origin-left transition-transform duration-500',
+                      active
+                        ? 'bg-cherry scale-x-100'
+                        : 'bg-ink/40 scale-x-0 group-hover:scale-x-100',
+                    )}
+                  />
+                </Link>
+              )
+            })}
+          </nav>
 
-          {/* CTA Button + Mobile Menu */}
-          <div className="flex items-center gap-6 sm:gap-8 lg:gap-10">
-            <Link href="/contact" className="hidden sm:block">
-              <Button size="md" variant="primary">
-                Get Started
-              </Button>
+          <div className="flex items-center gap-3 ml-3">
+            <Link
+              href="/contact"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ink text-paper text-[13px] font-medium hover:bg-ink-soft transition-colors"
+            >
+              Start a project
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M2 10L10 2M10 2H4M10 2V8"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </Link>
 
-            {/* Mobile Menu Button */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              aria-label="Toggle menu"
+              onClick={() => setIsOpen((v) => !v)}
+              className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 hover:border-ink/40 transition-colors"
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isOpen}
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                 {isOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12"></path>
+                  <path
+                    d="M2 2L12 8M12 2L2 8"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
                 ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  <>
+                    <path d="M0 1H14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                    <path d="M0 9H14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                  </>
                 )}
               </svg>
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-4 border-t border-gray-200 dark:border-gray-800">
-            <div className="flex flex-col space-y-1 pt-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className={cn(
-                    'px-4 py-2 rounded-lg text-sm font-medium transition-colors',
-                    pathname === link.href
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-primary'
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Link href="/contact" className="px-4 py-2">
-                <Button size="md" variant="primary" className="w-full">
-                  Get Started
-                </Button>
-              </Link>
-            </div>
-          </div>
-        )}
       </div>
-    </nav>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="md:hidden border-t border-ink/10 bg-paper">
+          <nav className="mx-auto max-w-[1320px] px-5 py-6 grid gap-1">
+            {navLinks.map((link, i) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  'group flex items-baseline justify-between py-3 border-b border-ink/8 last:border-b-0',
+                  pathname === link.href ? 'text-ink' : 'text-ink/70',
+                )}
+              >
+                <span className="font-display text-2xl tracking-tight">{link.label}</span>
+                <span className="font-mono text-[11px] tracking-widest text-ash">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+              </Link>
+            ))}
+            <Link
+              href="/contact"
+              className="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-ink text-paper text-sm font-medium"
+            >
+              Start a project →
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
   )
 }

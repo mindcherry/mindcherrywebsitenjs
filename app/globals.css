@@ -1,175 +1,340 @@
 @import "tailwindcss";
 
-/* ===== Theme CSS Variables ===== */
-:root {
-  /* Brand Colors */
-  --color-primary: #EA1845;
-  --color-primary-50: #fdf2f6;
-  --color-primary-100: #fbe8ed;
-  --color-primary-500: #EA1845;
-  --color-primary-600: #d81640;
-  --color-primary-700: #c60c38;
+/* ==============================================================
+   MindCherry — editorial design system
+   Tailwind v4 @theme — defines CSS variables that auto-generate
+   utilities (bg-cherry, text-ink, font-display, etc.).
+   ============================================================== */
 
-  /* Text Colors */
-  --color-text-primary: #15161B;
-  --color-text-secondary: #4E4E4E;
-  --color-text-tertiary: #8B8B8B;
+@theme {
+  /* ── Palette ─────────────────────────────────────────────── */
+  --color-ink: #0B0B0F;            /* near-black with a hint of blue */
+  --color-ink-soft: #1A1A22;
+  --color-paper: #F5F2EA;          /* warm cream, the editorial base */
+  --color-paper-deep: #ECE7DA;
+  --color-bone: #E6E0D4;           /* layered card / inset background */
+  --color-ash: #5A5648;            /* muted body text on paper — WCAG AA on paper */
+  --color-ash-soft: #807B6C;       /* secondary mute — meets AA on paper */
+  --color-cherry: #E91E46;         /* brand red — fills + decorative use only */
+  --color-cherry-text: #B8112F;    /* used for actual TEXT on paper (4.7:1 on paper) */
+  --color-cherry-deep: #960B27;
+  --color-cherry-tint: #FCE7EC;
+  --color-moss: #2A3D2F;           /* sparing secondary accent */
 
-  /* Background Colors */
-  --color-bg-light: #E1E4EB;
-  --color-bg-white: #FFFFFF;
-  --color-bg-gray: #F5F5F5;
-  --color-bg-dark: #0A0A0A;
+  /* legacy aliases so other pages built on `primary` / `dark-primary`
+     don't break while we redesign them. */
+  --color-primary: var(--color-cherry);
+  --color-primary-50: #FDF2F5;
+  --color-primary-100: #FBE3EA;
+  --color-primary-500: var(--color-cherry);
+  --color-primary-600: var(--color-cherry-deep);
+  --color-primary-700: #960B27;
+  --color-dark-primary: var(--color-ink);
+  --color-dark-secondary: var(--color-ash);
+  --color-dark-bg: var(--color-ink);
+  --color-light-bg: var(--color-bone);
+  --color-light-text: var(--color-ink);
 
-  /* Font Family */
-  --font-family: 'Monrope', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  /* ── Typography ──────────────────────────────────────────── */
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-sans: 'Instrument Sans', 'Söhne', 'Helvetica Neue', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Geist Mono', ui-monospace, monospace;
 
-  /* Spacing */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 12px;
-  --spacing-lg: 16px;
-  --spacing-xl: 24px;
-  --spacing-2xl: 32px;
-  --spacing-3xl: 48px;
-  --spacing-4xl: 64px;
+  /* fluid type scale — clamps so big editorial headlines breathe
+     between mobile and desktop without manual breakpoints */
+  --text-xs:   13px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-lg:   18px;
+  --text-xl:   clamp(20px, 1.4vw + 12px, 24px);
+  --text-2xl:  clamp(24px, 2vw + 12px, 32px);
+  --text-3xl:  clamp(30px, 2.5vw + 16px, 44px);
+  --text-4xl:  clamp(38px, 4vw + 16px, 64px);
+  --text-5xl:  clamp(48px, 6vw + 16px, 96px);
+  --text-6xl:  clamp(60px, 8vw + 20px, 128px);
+  --text-7xl:  clamp(72px, 10vw + 24px, 168px);
 
-  /* Border Radius */
+  /* ── Motion ──────────────────────────────────────────────── */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-out-soft: cubic-bezier(0.33, 1, 0.68, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-marquee-rev: marquee-rev 42s linear infinite;
+  --animate-rise: rise 0.8s var(--ease-out-expo) both;
+  --animate-tracelines: traceline 2.4s var(--ease-out-soft) both;
+  --animate-scrollnudge: scrollnudge 2s var(--ease-out-soft) infinite;
+
+  /* ── Border radii — keep them restrained in editorial mode ── */
   --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
   --radius-xl: 16px;
-  --radius-full: 9999px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-
-  /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-2xl: 24px;
 }
 
-/* Dark mode colors */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text-primary: #FFFFFF;
-    --color-text-secondary: #B0B0B0;
-    --color-bg-white: #1A1A1A;
-    --color-bg-gray: #2A2A2A;
-  }
+/* ── Keyframes — declared here so @theme animation utilities work ── */
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@keyframes marquee-rev {
+  from { transform: translate3d(-50%, 0, 0); }
+  to   { transform: translate3d(0, 0, 0); }
+}
+/* Composited animations — only opacity + transform (no `filter:`).
+   Keeps the GPU on the fast-path and stops Lighthouse flagging
+   "non-composited animations". */
+@keyframes rise {
+  from { opacity: 0; transform: translate3d(0, 28px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes traceline {
+  from { stroke-dashoffset: var(--trace-len, 1200); opacity: 0; }
+  to   { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes scrollnudge {
+  0%, 100% { transform: translate3d(0, 0, 0); opacity: 0.55; }
+  50%      { transform: translate3d(0, 6px, 0); opacity: 1; }
+}
+@keyframes morphIn {
+  0%   { opacity: 0; transform: translate3d(0, 18px, 0) scale(0.94); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes morphOut {
+  0%   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  100% { opacity: 0; transform: translate3d(0, -18px, 0) scale(0.94); }
+}
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%      { transform: scale(1.6); opacity: 0.45; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
 }
 
-/* ===== Global Styles ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ==============================================================
+   Base — wrapped in @layer base so Tailwind utilities (which sit
+   in @layer utilities) can still override element-level rules
+   like `a { color: inherit }`. Without the wrapper, unlayered
+   rules beat utilities regardless of selector specificity.
+   ============================================================== */
+@layer base {
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
 
-html,
-body {
-  height: 100%;
+html {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'ss01', 'cv11';
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-bg-white);
-  color: var(--color-text-primary);
-  font-family: var(--font-family);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  line-height: 1.55;
+  letter-spacing: -0.005em;
 }
 
-#__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+/* paper grain — subtle SVG noise overlay, fixed so it doesn't redraw */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.42;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.05 0 0 0 0 0.06 0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 
-/* Typography */
+::selection {
+  background: var(--color-cherry);
+  color: var(--color-paper);
+}
+
+/* Headings inherit display font but don't autobold — let the type designer choose */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
+  font-family: var(--font-display);
+  font-weight: 460;
+  line-height: 0.96;
+  letter-spacing: -0.022em;
+  color: var(--color-ink);
+  font-variation-settings: 'opsz' 96;
+}
+h1 { font-variation-settings: 'opsz' 144; }
+
+p { color: var(--color-ash); }
+
+a { color: inherit; text-decoration: none; }
+
+/* Default focus — visible but elegant */
+*:focus-visible {
+  outline: 2px solid var(--color-cherry);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+} /* end @layer base */
+
+/* ==============================================================
+   Editorial utilities — composed classes used across home
+   ============================================================== */
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+  font-weight: 500;
 }
 
-p {
-  color: var(--color-text-secondary);
+.rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(11, 11, 15, 0.25) 12%,
+    rgba(11, 11, 15, 0.25) 88%,
+    transparent 100%
+  );
 }
 
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color var(--transition-base);
+.divider-dot {
+  width: 6px; height: 6px; border-radius: 99px;
+  background: var(--color-cherry);
+  display: inline-block;
+  vertical-align: middle;
 }
 
-a:hover {
-  color: var(--color-primary-600);
+.font-italic-display {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: 'opsz' 144;
 }
 
-/* Utilities */
-.text-primary {
-  color: var(--color-text-primary);
+/* "kinetic" rotating word in hero */
+.kinetic-word {
+  display: inline-block;
+  position: relative;
+  color: var(--color-cherry);
+  font-style: italic;
+  font-family: var(--font-display);
+  font-variation-settings: 'opsz' 144;
+}
+.kinetic-word > span { display: inline-block; will-change: transform, opacity, filter; }
+.kinetic-enter { animation: morphIn 0.85s var(--ease-out-expo) both; }
+.kinetic-exit  { animation: morphOut 0.6s var(--ease-out-soft) both; }
+
+/* underline trace under the kinetic word */
+.kinetic-underline {
+  position: absolute;
+  left: 4%; right: 4%;
+  bottom: -0.04em;
+  height: 12px;
+  pointer-events: none;
+  overflow: visible;
+}
+.kinetic-underline path {
+  stroke: var(--color-cherry);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: traceline 1.2s var(--ease-out-expo) 0.3s forwards;
 }
 
-.text-secondary {
-  color: var(--color-text-secondary);
+/* marquee row */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 4rem;
+  animation: var(--animate-marquee);
+}
+.marquee-track-rev { animation: var(--animate-marquee-rev); }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+/* asymmetric gradient borderless cards */
+.card-edge {
+  position: relative;
+  background: var(--color-bone);
+  border: 1px solid rgba(11, 11, 15, 0.08);
+  transition: transform 0.6s var(--ease-out-expo), box-shadow 0.6s var(--ease-out-expo), border-color 0.4s ease;
+}
+.card-edge:hover {
+  transform: translateY(-6px);
+  border-color: rgba(11, 11, 15, 0.18);
+  box-shadow: 0 28px 48px -28px rgba(11, 11, 15, 0.22);
 }
 
-.bg-gradient-brand {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-600) 100%);
+/* monogram chip — mono font, restrained */
+.mono-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+  border: 1px solid rgba(11, 11, 15, 0.16);
+  border-radius: 99px;
+  background: transparent;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* shimmer skeleton (reused for blog placeholder) */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-bone) 0%,
+    var(--color-paper-deep) 30%,
+    var(--color-bone) 60%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 1.6s linear infinite;
 }
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* "process step" sticky stage */
+.process-stage {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+/* Inactive process step — fade ONLY the title (not body copy / chips), and
+   only by colour, never by opacity, so contrast still passes WCAG AA. */
+.is-inactive h3 { color: var(--color-ash-soft); }
+
+/* pulse dot for live indicators */
+.live-dot {
+  width: 8px; height: 8px; border-radius: 99px;
+  background: var(--color-cherry);
+  position: relative;
+}
+.live-dot::after {
+  content: '';
+  position: absolute; inset: -4px;
+  border-radius: 99px;
+  background: var(--color-cherry);
+  animation: pulseDot 1.6s ease-in-out infinite;
+  z-index: -1;
 }
 
-.animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out;
-}
-
-.animate-slideInRight {
-  animation: slideInRight 0.6s ease-out;
-}
-
-/* Respect user's motion preferences */
+/* ── Reduce motion ──────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  body::before { display: none; }
 }

@@ -1,0 +1,111 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+        - generic [ref=e23]: Studio · Lahore
+      - navigation [ref=e25]:
+        - link "Home" [ref=e26] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e27] [cursor=pointer]:
+          - /url: /services
+        - link "Work" [ref=e28] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Studio" [ref=e29] [cursor=pointer]:
+          - /url: /about
+        - link "Journal" [ref=e30] [cursor=pointer]:
+          - /url: /blog
+          - text: Journal
+        - link "Contact" [ref=e32] [cursor=pointer]:
+          - /url: /contact
+      - link "Start a project" [ref=e34] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e35]
+  - generic [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e41]: Resources & Insights
+      - heading "Our Blog" [level=1] [ref=e42]
+      - paragraph [ref=e43]: Stay updated with the latest trends, tips, and insights from our team of experts.
+    - img [ref=e45]
+  - generic [ref=e48]:
+    - textbox "Search articles..." [ref=e50]
+    - paragraph [ref=e52]: Loading blog posts...
+  - generic [ref=e55]:
+    - heading "Subscribe to Our Newsletter" [level=2] [ref=e56]
+    - paragraph [ref=e57]: Get the latest insights and updates delivered to your inbox. No spam, just valuable content.
+    - link "Subscribe" [ref=e59] [cursor=pointer]:
+      - /url: /contact?type=newsletter
+      - button "Subscribe" [ref=e60]
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - img "MindCherry" [ref=e64]
+          - paragraph [ref=e81]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e82]:
+            - link "Twitter" [ref=e83] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e84]: T
+            - link "LinkedIn" [ref=e85] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e86]: L
+            - link "Instagram" [ref=e87] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e88]: I
+            - link "Facebook" [ref=e89] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e90]: F
+        - generic [ref=e91]:
+          - heading "Studio" [level=4] [ref=e92]
+          - list [ref=e93]:
+            - listitem [ref=e94]:
+              - link "About" [ref=e95] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e96]:
+              - link "Journal" [ref=e97] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e98]:
+              - link "Careers" [ref=e99] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e100]:
+          - heading "Work" [level=4] [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]:
+              - link "Selected work" [ref=e104] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e105]:
+              - link "Services" [ref=e106] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e107]:
+              - link "Process" [ref=e108] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e109]:
+          - heading "Reach" [level=4] [ref=e110]
+          - list [ref=e111]:
+            - listitem [ref=e112]:
+              - link "hello@mindcherry.com" [ref=e113] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e114]:
+              - link "Schedule a call" [ref=e115] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e116]:
+              - link "+923490290356" [ref=e117] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e118]:
+          - heading "Studio" [level=4] [ref=e119]
+          - paragraph [ref=e120]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e121]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e122]:
+        - paragraph [ref=e123]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e124]:
+          - link "Privacy" [ref=e125] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e126] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e132] [cursor=pointer]:
+    - img [ref=e133]

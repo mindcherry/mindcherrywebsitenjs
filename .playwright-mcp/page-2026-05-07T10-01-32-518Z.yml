@@ -1,0 +1,624 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+        - generic [ref=e23]: Studio · Lahore
+      - navigation [ref=e25]:
+        - link "Home" [ref=e26] [cursor=pointer]:
+          - /url: /
+          - text: Home
+        - link "Services" [ref=e28] [cursor=pointer]:
+          - /url: /services
+        - link "Work" [ref=e29] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Studio" [ref=e30] [cursor=pointer]:
+          - /url: /about
+        - link "Journal" [ref=e31] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e32] [cursor=pointer]:
+          - /url: /contact
+      - link "Start a project" [ref=e34] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e35]
+  - main [ref=e37]:
+    - region "MindCherry — software for founders" [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]: Booking Q3 / Q4 2026
+          - generic [ref=e44]: A studio of seven · 15 + years combined
+          - generic [ref=e46]: PKT — overlap with EU & US
+        - generic [ref=e47]:
+          - heading "We turn founder ideas into [shipped] software." [level=1] [ref=e48]:
+            - text: We turn founder ideas
+            - text: into
+            - generic [ref=e49]:
+              - generic [ref=e50]: "[shipped]"
+              - img
+            - text: software.
+          - paragraph [ref=e51]: MindCherry is a software house for ambitious founders. We sit beside early and mid-stage teams to design, build, and quietly grow the product they bet the company on.
+          - generic [ref=e53]:
+            - link "Start a project" [ref=e54] [cursor=pointer]:
+              - /url: /contact
+              - text: Start a project
+              - img [ref=e56]
+            - link "See selected work" [ref=e58] [cursor=pointer]:
+              - /url: /portfolio
+        - generic [ref=e59]:
+          - generic [ref=e61]:
+            - img "Sunlit studio with grid of windows casting long diagonal shadows on chairs and tables" [ref=e63]
+            - generic [ref=e65]:
+              - generic [ref=e66]: Fig. 01
+              - generic [ref=e67]: the studio, on a quiet Tuesday morning
+          - blockquote [ref=e68]:
+            - paragraph [ref=e69]: “We don't do throwaway demos. The first thing we ship to your users is the same code we'll be running in production three years from now.”
+            - generic [ref=e72]: Adeel · founding engineer
+        - generic [ref=e75]: scroll · meet the studio
+    - region "Trusted technical surface" [ref=e76]:
+      - generic [ref=e77]:
+        - paragraph [ref=e78]: The toolkit /
+        - list [ref=e80]:
+          - listitem [ref=e81]:
+            - generic [ref=e82]: TypeScript
+            - generic [ref=e83]: ·
+          - listitem [ref=e84]:
+            - generic [ref=e85]: Node.js
+            - generic [ref=e86]: ·
+          - listitem [ref=e87]:
+            - generic [ref=e88]: Ruby
+            - generic [ref=e89]: ·
+          - listitem [ref=e90]:
+            - generic [ref=e91]: Python
+            - generic [ref=e92]: ·
+          - listitem [ref=e93]:
+            - generic [ref=e94]: PHP
+            - generic [ref=e95]: ·
+          - listitem [ref=e96]:
+            - generic [ref=e97]: Next.js
+            - generic [ref=e98]: ·
+          - listitem [ref=e99]:
+            - generic [ref=e100]: NestJS
+            - generic [ref=e101]: ·
+          - listitem [ref=e102]:
+            - generic [ref=e103]: Ruby on Rails
+            - generic [ref=e104]: ·
+          - listitem [ref=e105]:
+            - generic [ref=e106]: Django
+            - generic [ref=e107]: ·
+          - listitem [ref=e108]:
+            - generic [ref=e109]: Laravel
+            - generic [ref=e110]: ·
+          - listitem [ref=e111]:
+            - generic [ref=e112]: React
+            - generic [ref=e113]: ·
+          - listitem [ref=e114]:
+            - generic [ref=e115]: Tailwind
+            - generic [ref=e116]: ·
+          - listitem [ref=e117]:
+            - generic [ref=e118]: Mantine
+            - generic [ref=e119]: ·
+          - listitem [ref=e120]:
+            - generic [ref=e121]: Chakra UI
+            - generic [ref=e122]: ·
+          - listitem [ref=e123]:
+            - generic [ref=e124]: PostgreSQL
+            - generic [ref=e125]: ·
+          - listitem [ref=e126]:
+            - generic [ref=e127]: MongoDB
+            - generic [ref=e128]: ·
+          - listitem [ref=e129]:
+            - generic [ref=e130]: MySQL
+            - generic [ref=e131]: ·
+          - listitem [ref=e132]:
+            - generic [ref=e133]: Redis
+            - generic [ref=e134]: ·
+          - listitem [ref=e135]:
+            - generic [ref=e136]: TypeScript
+            - generic [ref=e137]: ·
+          - listitem [ref=e138]:
+            - generic [ref=e139]: Node.js
+            - generic [ref=e140]: ·
+          - listitem [ref=e141]:
+            - generic [ref=e142]: Ruby
+            - generic [ref=e143]: ·
+          - listitem [ref=e144]:
+            - generic [ref=e145]: Python
+            - generic [ref=e146]: ·
+          - listitem [ref=e147]:
+            - generic [ref=e148]: PHP
+            - generic [ref=e149]: ·
+          - listitem [ref=e150]:
+            - generic [ref=e151]: Next.js
+            - generic [ref=e152]: ·
+          - listitem [ref=e153]:
+            - generic [ref=e154]: NestJS
+            - generic [ref=e155]: ·
+          - listitem [ref=e156]:
+            - generic [ref=e157]: Ruby on Rails
+            - generic [ref=e158]: ·
+          - listitem [ref=e159]:
+            - generic [ref=e160]: Django
+            - generic [ref=e161]: ·
+          - listitem [ref=e162]:
+            - generic [ref=e163]: Laravel
+            - generic [ref=e164]: ·
+          - listitem [ref=e165]:
+            - generic [ref=e166]: React
+            - generic [ref=e167]: ·
+          - listitem [ref=e168]:
+            - generic [ref=e169]: Tailwind
+            - generic [ref=e170]: ·
+          - listitem [ref=e171]:
+            - generic [ref=e172]: Mantine
+            - generic [ref=e173]: ·
+          - listitem [ref=e174]:
+            - generic [ref=e175]: Chakra UI
+            - generic [ref=e176]: ·
+          - listitem [ref=e177]:
+            - generic [ref=e178]: PostgreSQL
+            - generic [ref=e179]: ·
+          - listitem [ref=e180]:
+            - generic [ref=e181]: MongoDB
+            - generic [ref=e182]: ·
+          - listitem [ref=e183]:
+            - generic [ref=e184]: MySQL
+            - generic [ref=e185]: ·
+          - listitem [ref=e186]:
+            - generic [ref=e187]: Redis
+            - generic [ref=e188]: ·
+    - generic [ref=e191]:
+      - paragraph [ref=e193]: On purpose
+      - generic [ref=e195]:
+        - paragraph [ref=e196]: We are a small studio, and we like it that way. Every brief is taken by a senior who'll still be on Slack with you when the product is six months old. We pick our work, we limit our headcount, and we defend the boring decisions that quietly compound.
+        - generic [ref=e197]:
+          - link "Read the studio brief" [ref=e198] [cursor=pointer]:
+            - /url: /about
+            - text: Read the studio brief
+            - img [ref=e199]
+          - generic [ref=e201]: Est. 2018 · Lahore — currently 7 humans
+    - generic [ref=e203]:
+      - generic [ref=e204]:
+        - paragraph [ref=e205]: What we offer
+        - heading "Three engagements, honestly named." [level=2] [ref=e207]:
+          - text: Three engagements,
+          - text: honestly named.
+      - list [ref=e208]:
+        - listitem [ref=e209]:
+          - button "01 Custom Software & MVP Development Read" [ref=e210] [cursor=pointer]:
+            - generic [ref=e212]: "01"
+            - heading "Custom Software & MVP Development" [level=3] [ref=e214]
+            - generic [ref=e215]:
+              - generic [ref=e216]: Read
+              - img [ref=e218]
+          - generic [ref=e220]:
+            - paragraph [ref=e221]: We sit with founders to brainstorm, design, and ship product tailored to a specific business thesis — without losing sight of time-to-market. Most of our work begins as a v1 and grows with the company.
+            - list [ref=e222]:
+              - listitem [ref=e223]:
+                - generic [ref=e224]: +
+                - text: Founding-engineer mindset
+              - listitem [ref=e225]:
+                - generic [ref=e226]: +
+                - text: Production-ready in weeks, not quarters
+              - listitem [ref=e227]:
+                - generic [ref=e228]: +
+                - text: TypeScript, Next.js, Rails, Django, Laravel
+              - listitem [ref=e229]:
+                - generic [ref=e230]: +
+                - text: Postgres, MongoDB, MySQL, Redis
+              - listitem [ref=e231]:
+                - generic [ref=e232]: +
+                - text: Stripe, Twilio, OpenAI, AWS, GCP
+        - listitem [ref=e233]:
+          - button "02 Architecture & Design Read" [ref=e234] [cursor=pointer]:
+            - generic [ref=e236]: "02"
+            - heading "Architecture & Design" [level=3] [ref=e238]
+            - generic [ref=e239]:
+              - generic [ref=e240]: Read
+              - img [ref=e242]
+          - generic [ref=e244]:
+            - paragraph [ref=e245]: Senior architects and engineering managers who help you shape an upcoming project — covering its technical and execution dimensions before a single feature is built.
+            - list [ref=e246]:
+              - listitem [ref=e247]:
+                - generic [ref=e248]: +
+                - text: System & data-model design
+              - listitem [ref=e249]:
+                - generic [ref=e250]: +
+                - text: Cloud and DevOps blueprints
+              - listitem [ref=e251]:
+                - generic [ref=e252]: +
+                - text: Performance & scaling reviews
+              - listitem [ref=e253]:
+                - generic [ref=e254]: +
+                - text: Security and compliance reviews
+              - listitem [ref=e255]:
+                - generic [ref=e256]: +
+                - text: Hiring plan & team scaffolding
+        - listitem [ref=e257]:
+          - button "03 Software Consultancy Read" [ref=e258] [cursor=pointer]:
+            - generic [ref=e260]: "03"
+            - heading "Software Consultancy" [level=3] [ref=e262]
+            - generic [ref=e263]:
+              - generic [ref=e264]: Read
+              - img [ref=e266]
+          - generic [ref=e268]:
+            - paragraph [ref=e269]: A consulting team of seasoned architects and developers with 15+ years of combined experience working with startups, SMBs, and enterprises — embedded with your team for a focused engagement.
+            - list [ref=e270]:
+              - listitem [ref=e271]:
+                - generic [ref=e272]: +
+                - text: Technical due diligence
+              - listitem [ref=e273]:
+                - generic [ref=e274]: +
+                - text: Code & architecture audits
+              - listitem [ref=e275]:
+                - generic [ref=e276]: +
+                - text: Migration strategy (Wordpress → Next.js, monolith → services)
+              - listitem [ref=e277]:
+                - generic [ref=e278]: +
+                - text: Fractional CTO engagements
+              - listitem [ref=e279]:
+                - generic [ref=e280]: +
+                - text: Vendor / contractor evaluations
+      - link "Full services brief" [ref=e282] [cursor=pointer]:
+        - /url: /services
+        - text: Full services brief
+        - img [ref=e283]
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - paragraph [ref=e288]: How we work
+        - heading "Four moves we make on every engagement, in this exact order." [level=2] [ref=e290]:
+          - text: Four moves we make on every engagement,
+          - text: in this exact order.
+      - generic [ref=e291]:
+        - generic [ref=e293]:
+          - img "A designer sketching ideas in a spiral notebook on a wooden desk" [ref=e295]
+          - img [ref=e298]
+          - img [ref=e301]
+          - img [ref=e304]
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - paragraph [ref=e308]: Step 01 of 04
+              - paragraph [ref=e309]: Discover
+            - list [ref=e310]:
+              - listitem [ref=e311]:
+                - generic [ref=e313]: "01"
+              - listitem [ref=e314]:
+                - generic [ref=e316]: "02"
+              - listitem [ref=e317]:
+                - generic [ref=e319]: "03"
+              - listitem [ref=e320]:
+                - generic [ref=e322]: "04"
+        - generic [ref=e323]:
+          - generic [ref=e324]:
+            - generic [ref=e325]:
+              - generic [ref=e326]: "01"
+              - heading "Discover" [level=3] [ref=e327]
+            - paragraph [ref=e328]: We sit with the founders for a week. We map the user, the model, the constraints, and the unsaid assumptions. The output is a one-page brief that disambiguates the product before a pixel is drawn.
+            - list [ref=e329]:
+              - listitem [ref=e330]: Founder interviews
+              - listitem [ref=e331]: User flows
+              - listitem [ref=e332]: One-page brief
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - generic [ref=e335]: "02"
+              - heading "Architect" [level=3] [ref=e336]
+            - paragraph [ref=e337]: Senior engineers and architects pick the boring, well-understood primitives. We choose Postgres over the new database, Rails or Next over the trendy framework — unless the trade-off genuinely justifies it.
+            - list [ref=e338]:
+              - listitem [ref=e339]: System diagram
+              - listitem [ref=e340]: Data model
+              - listitem [ref=e341]: Risk register
+          - generic [ref=e342]:
+            - generic [ref=e343]:
+              - generic [ref=e344]: "03"
+              - heading "Build" [level=3] [ref=e345]
+            - paragraph [ref=e346]: Two-week iterations, end-to-end, with the founder in the loop. Every PR ships behind a feature flag. The first usable surface lands in your hands inside the first sprint — no demos, real product.
+            - list [ref=e347]:
+              - listitem [ref=e348]: Sprint demos
+              - listitem [ref=e349]: Behind feature flags
+              - listitem [ref=e350]: Real production deploys
+          - generic [ref=e351]:
+            - generic [ref=e352]:
+              - generic [ref=e353]: "04"
+              - heading "Scale" [level=3] [ref=e354]
+            - paragraph [ref=e355]: We watch the dashboards we built. Performance, reliability, abuse, and growth signals get a weekly review. We tell you about issues before your users do, and we hand off to your team only when you ask.
+            - list [ref=e356]:
+              - listitem [ref=e357]: On-call rotation
+              - listitem [ref=e358]: SLOs & dashboards
+              - listitem [ref=e359]: Quarterly architecture review
+    - generic [ref=e361]:
+      - generic [ref=e362]:
+        - paragraph [ref=e363]: Selected work
+        - heading "We'd rather show you two products we still maintain than a wall of logos we don't." [level=2] [ref=e365]
+      - generic [ref=e366]:
+        - article [ref=e367]:
+          - link "Arcadia Case · 01 — PropTech 2023 → ongoing Arcadia. Real-estate classifieds platform for individuals and agencies Next.js TypeScript PostgreSQL Elasticsearch AWS" [ref=e368] [cursor=pointer]:
+            - /url: /portfolio
+            - generic [ref=e369]:
+              - img "Arcadia" [ref=e370]
+              - generic [ref=e372]:
+                - generic [ref=e373]: Case · 01 — PropTech
+                - generic [ref=e374]: 2023 → ongoing
+            - generic [ref=e375]:
+              - generic [ref=e376]:
+                - heading "Arcadia." [level=3] [ref=e377]
+                - paragraph [ref=e378]: Real-estate classifieds platform for individuals and agencies
+              - list [ref=e379]:
+                - listitem [ref=e380]: Next.js
+                - listitem [ref=e381]: TypeScript
+                - listitem [ref=e382]: PostgreSQL
+                - listitem [ref=e383]: Elasticsearch
+                - listitem [ref=e384]: AWS
+        - article [ref=e385]:
+          - link "Mindwell Case · 02 — HealthTech 2024 → ongoing Mindwell. HIPAA-compliant telehealth platform for therapists and patients Next.js NestJS PostgreSQL WebRTC" [ref=e386] [cursor=pointer]:
+            - /url: /portfolio
+            - generic [ref=e387]:
+              - img "Mindwell" [ref=e388]
+              - generic [ref=e390]:
+                - generic [ref=e391]: Case · 02 — HealthTech
+                - generic [ref=e392]: 2024 → ongoing
+            - generic [ref=e393]:
+              - heading "Mindwell." [level=3] [ref=e394]
+              - paragraph [ref=e395]: HIPAA-compliant telehealth platform for therapists and patients
+              - list [ref=e396]:
+                - listitem [ref=e397]: Next.js
+                - listitem [ref=e398]: NestJS
+                - listitem [ref=e399]: PostgreSQL
+                - listitem [ref=e400]: WebRTC
+      - generic [ref=e401]:
+        - paragraph [ref=e402]: We're currently writing up two more engagements (a fintech back-office and an internal tool for a marketplace). Email us if you'd like an early read.
+        - link "All case studies" [ref=e403] [cursor=pointer]:
+          - /url: /portfolio
+          - text: All case studies
+          - img [ref=e404]
+    - generic [ref=e406]:
+      - generic [ref=e408]:
+        - paragraph [ref=e409]: What we believe
+        - heading "Six commitments, printed on the studio wall." [level=2] [ref=e411]:
+          - text: Six commitments,
+          - text: printed on the studio wall.
+      - list [ref=e413]:
+        - listitem [ref=e414]:
+          - generic [ref=e415]: Ease of scalability
+          - generic [ref=e416]: ●
+        - listitem [ref=e417]:
+          - generic [ref=e418]: Instant impact
+          - generic [ref=e419]: ●
+        - listitem [ref=e420]:
+          - generic [ref=e421]: Expertise & experience
+          - generic [ref=e422]: ●
+        - listitem [ref=e423]:
+          - generic [ref=e424]: Time-zone aligned
+          - generic [ref=e425]: ●
+        - listitem [ref=e426]:
+          - generic [ref=e427]: Full flexibility
+          - generic [ref=e428]: ●
+        - listitem [ref=e429]:
+          - generic [ref=e430]: Proactive support
+          - generic [ref=e431]: ●
+        - listitem [ref=e432]:
+          - generic [ref=e433]: Ease of scalability
+          - generic [ref=e434]: ●
+        - listitem [ref=e435]:
+          - generic [ref=e436]: Instant impact
+          - generic [ref=e437]: ●
+        - listitem [ref=e438]:
+          - generic [ref=e439]: Expertise & experience
+          - generic [ref=e440]: ●
+        - listitem [ref=e441]:
+          - generic [ref=e442]: Time-zone aligned
+          - generic [ref=e443]: ●
+        - listitem [ref=e444]:
+          - generic [ref=e445]: Full flexibility
+          - generic [ref=e446]: ●
+        - listitem [ref=e447]:
+          - generic [ref=e448]: Proactive support
+          - generic [ref=e449]: ●
+      - list [ref=e451]:
+        - listitem [ref=e452]:
+          - generic [ref=e453]: Architectures that grow without rewrites — picking the boring, well-understood primitives over the trendy ones.
+          - generic [ref=e454]: /
+        - listitem [ref=e455]:
+          - generic [ref=e456]: Pull-request-on-day-two, not week-three. We onboard fast and ship something usable inside the first sprint.
+          - generic [ref=e457]: /
+        - listitem [ref=e458]:
+          - generic [ref=e459]: 15+ years of combined senior engineering across early-stage startups, SMBs, and enterprises.
+          - generic [ref=e460]: /
+        - listitem [ref=e461]:
+          - generic [ref=e462]: Pakistan-based, working comfortable mornings with EU clients and afternoons with US clients. Real overlap, not async-only.
+          - generic [ref=e463]: /
+        - listitem [ref=e464]:
+          - generic [ref=e465]: Fixed-scope when you need predictability, time-and-materials when you need exploration. Switch freely.
+          - generic [ref=e466]: /
+        - listitem [ref=e467]:
+          - generic [ref=e468]: We watch the on-call dashboards we built. You hear about issues from us before you hear about them from your users.
+          - generic [ref=e469]: /
+        - listitem [ref=e470]:
+          - generic [ref=e471]: Architectures that grow without rewrites — picking the boring, well-understood primitives over the trendy ones.
+          - generic [ref=e472]: /
+        - listitem [ref=e473]:
+          - generic [ref=e474]: Pull-request-on-day-two, not week-three. We onboard fast and ship something usable inside the first sprint.
+          - generic [ref=e475]: /
+        - listitem [ref=e476]:
+          - generic [ref=e477]: 15+ years of combined senior engineering across early-stage startups, SMBs, and enterprises.
+          - generic [ref=e478]: /
+        - listitem [ref=e479]:
+          - generic [ref=e480]: Pakistan-based, working comfortable mornings with EU clients and afternoons with US clients. Real overlap, not async-only.
+          - generic [ref=e481]: /
+        - listitem [ref=e482]:
+          - generic [ref=e483]: Fixed-scope when you need predictability, time-and-materials when you need exploration. Switch freely.
+          - generic [ref=e484]: /
+        - listitem [ref=e485]:
+          - generic [ref=e486]: We watch the on-call dashboards we built. You hear about issues from us before you hear about them from your users.
+          - generic [ref=e487]: /
+    - generic [ref=e489]:
+      - generic [ref=e490]:
+        - paragraph [ref=e491]: What founders say
+        - heading "We don't collect testimonials — these came in unprompted." [level=2] [ref=e493]:
+          - text: We don't collect testimonials —
+          - text: these came in unprompted.
+      - generic [ref=e494]:
+        - figure "/ Kurt Schmidt Founder, Healthcare startup" [ref=e495]:
+          - blockquote [ref=e496]:
+            - generic [ref=e497]: “
+            - text: I highly recommend Adeel as a Technical Project Manager. His professionalism, innovative approach, and genuine commitment to our projects have been a driving force in our team's success. Adeel not only excels in generating impactful ideas but also collaborates effectively with cross-functional teams, always ready to bring in external resources when needed. His dedication to understanding and implementing technical HIPAA requirements has significantly enhanced our compliance and project quality.
+          - generic [ref=e498]:
+            - generic [ref=e499]: / Kurt Schmidt
+            - generic [ref=e500]: Founder, Healthcare startup
+        - generic [ref=e501]:
+          - generic [ref=e502]:
+            - img "Two people collaborating at a whiteboard, generating ideas" [ref=e503]
+            - generic [ref=e505]: Fig. 02 — Mindwell pre-engagement workshop
+          - figure "/ Oscar R. Product owner" [ref=e506]:
+            - blockquote [ref=e507]: “Brilliant work ethic. Always open to discussion and new ideas on how to improve features. Willing to revisit work to fix any issues. Had several meetings with Adeel and he always was providing valuable input to fully understand the scope of work. Highly recommend for any web development job.”
+            - generic [ref=e508]:
+              - generic [ref=e509]: / Oscar R.
+              - generic [ref=e510]: Product owner
+    - generic [ref=e512]:
+      - generic [ref=e513]:
+        - paragraph [ref=e514]: From the journal
+        - generic [ref=e516]:
+          - heading "Long-form notes from the studio, written by the people who built it." [level=2] [ref=e517]:
+            - text: Long-form notes from the studio,
+            - text: written by the people who built it.
+          - link "All entries" [ref=e518] [cursor=pointer]:
+            - /url: /blog
+            - text: All entries
+            - img [ref=e519]
+      - generic [ref=e521]:
+        - article [ref=e522]:
+          - link "How we migrated 9,000+ orders to Shopify, seamlessly August 25, 2025 · 1 min read How we migrated 9,000+ orders to Shopify, seamlessly A step-by-step account of the legacy → Shopify migration we ran for a 9-figure DTC brand without dropping a single order or breaking a single SKU." [ref=e523] [cursor=pointer]:
+            - /url: /blog/shopify-migration-9000-orders
+            - img "How we migrated 9,000+ orders to Shopify, seamlessly" [ref=e525]
+            - generic [ref=e527]:
+              - generic [ref=e528]: August 25, 2025
+              - generic [ref=e529]: ·
+              - generic [ref=e530]: 1 min read
+            - heading "How we migrated 9,000+ orders to Shopify, seamlessly" [level=3] [ref=e531]
+            - paragraph [ref=e532]: A step-by-step account of the legacy → Shopify migration we ran for a 9-figure DTC brand without dropping a single order or breaking a single SKU.
+        - article [ref=e533]:
+          - link "E-commerce store migration to Shopify, with the tools we use July 13, 2025 · 1 min read E-commerce store migration to Shopify, with the tools we use The migration playbook we now reach for by default — including the small set of tools that earn a place in our toolkit and the ones we quietly retired." [ref=e534] [cursor=pointer]:
+            - /url: /blog/ecommerce-migration-tools
+            - img "E-commerce store migration to Shopify, with the tools we use" [ref=e536]
+            - generic [ref=e538]:
+              - generic [ref=e539]: July 13, 2025
+              - generic [ref=e540]: ·
+              - generic [ref=e541]: 1 min read
+            - heading "E-commerce store migration to Shopify, with the tools we use" [level=3] [ref=e542]
+            - paragraph [ref=e543]: The migration playbook we now reach for by default — including the small set of tools that earn a place in our toolkit and the ones we quietly retired.
+        - article [ref=e544]:
+          - link "Unlocking the potential of AI in business April 24, 2024 · 1 min read Unlocking the potential of AI in business A grounded look at where LLMs actually move the needle for the kinds of mid-market businesses we usually work with — and where they only look like they do." [ref=e545] [cursor=pointer]:
+            - /url: /blog/ai-in-business
+            - img "Unlocking the potential of AI in business" [ref=e547]
+            - generic [ref=e549]:
+              - generic [ref=e550]: April 24, 2024
+              - generic [ref=e551]: ·
+              - generic [ref=e552]: 1 min read
+            - heading "Unlocking the potential of AI in business" [level=3] [ref=e553]
+            - paragraph [ref=e554]: A grounded look at where LLMs actually move the needle for the kinds of mid-market businesses we usually work with — and where they only look like they do.
+      - paragraph [ref=e555]:
+        - text: Note · entries are placeholders until Sanity is connected — log in to
+        - link "/studio" [ref=e556] [cursor=pointer]:
+          - /url: /studio
+        - text: to publish the real ones.
+    - generic [ref=e559]:
+      - generic [ref=e560]:
+        - paragraph [ref=e561]: The next move
+        - heading "Have something you want built?" [level=2] [ref=e563]:
+          - text: Have something
+          - text: you want built?
+        - paragraph [ref=e564]: We answer every email personally, usually inside a working day. No SDR funnel, no sales scripts — just a 30-minute call with the person who'd run your engagement.
+        - generic [ref=e565]:
+          - link "Schedule a 30-minute call" [ref=e566] [cursor=pointer]:
+            - /url: https://calendly.com/adeel-lwxw/30min
+            - text: Schedule a 30-minute call
+            - img [ref=e568]
+          - link "hello@mindcherry.com" [ref=e570] [cursor=pointer]:
+            - /url: mailto:hello@mindcherry.com?subject=New project enquiry
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - term [ref=e573]: Reply window
+            - definition [ref=e574]: < 1 working day
+          - generic [ref=e575]:
+            - term [ref=e576]: Engagement length
+            - definition [ref=e577]: 8 weeks → ongoing
+          - generic [ref=e578]:
+            - term [ref=e579]: Time zone
+            - definition [ref=e580]: UTC +5 (Lahore)
+      - generic [ref=e582]:
+        - img "Hands writing notes in a book under the warm glow of a desk lamp" [ref=e583]
+        - generic [ref=e586]:
+          - paragraph [ref=e587]: Fig. 03
+          - paragraph [ref=e588]: after-hours, planning week 1
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e590]:
+      - generic [ref=e591]:
+        - generic [ref=e592]:
+          - img "MindCherry" [ref=e593]
+          - paragraph [ref=e610]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e611]:
+            - link "Twitter" [ref=e612] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e613]: T
+            - link "LinkedIn" [ref=e614] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e615]: L
+            - link "Instagram" [ref=e616] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e617]: I
+            - link "Facebook" [ref=e618] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e619]: F
+        - generic [ref=e620]:
+          - heading "Studio" [level=4] [ref=e621]
+          - list [ref=e622]:
+            - listitem [ref=e623]:
+              - link "About" [ref=e624] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e625]:
+              - link "Journal" [ref=e626] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e627]:
+              - link "Careers" [ref=e628] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e629]:
+          - heading "Work" [level=4] [ref=e630]
+          - list [ref=e631]:
+            - listitem [ref=e632]:
+              - link "Selected work" [ref=e633] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e634]:
+              - link "Services" [ref=e635] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e636]:
+              - link "Process" [ref=e637] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e638]:
+          - heading "Reach" [level=4] [ref=e639]
+          - list [ref=e640]:
+            - listitem [ref=e641]:
+              - link "hello@mindcherry.com" [ref=e642] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e643]:
+              - link "Schedule a call" [ref=e644] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e645]:
+              - link "+923490290356" [ref=e646] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e647]:
+          - heading "Studio" [level=4] [ref=e648]
+          - paragraph [ref=e649]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e650]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e651]:
+        - paragraph [ref=e652]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e653]:
+          - link "Privacy" [ref=e654] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e655] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e661] [cursor=pointer]:
+    - img [ref=e662]
+  - alert [ref=e665]
