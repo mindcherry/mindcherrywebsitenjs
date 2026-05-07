@@ -1,69 +1,59 @@
 import { TeamMember } from '../types'
 
+/**
+ * Studio of seven, real positioning. The previous site only credits "Adeel"
+ * (Tech PM) and small team — placeholder names below are kept anonymous-ish
+ * (single-letter surname) until headshots / bios are ready. Swap in real
+ * names + Sanity-managed bios when content is finalised.
+ */
 export const teamMembers: TeamMember[] = [
   {
-    id: '1',
-    name: 'Alex Johnson',
-    role: 'CEO & Founder',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alex-Johnson',
-    bio: 'Visionary leader with 15+ years of experience in software development and digital innovation. Passionate about creating world-class products.',
-    social: {
-      twitter: 'https://twitter.com',
-      linkedin: 'https://linkedin.com',
-    },
+    id: 'adeel',
+    name: 'Adeel',
+    role: 'Founding engineer · Technical PM',
+    image: '',
+    bio: 'Spends most days in code review and on-call. 12+ years across HIPAA-compliant healthtech, fintech, and marketplaces. Holds the architectural pen on every engagement.',
   },
   {
-    id: '2',
-    name: 'Sarah Chen',
-    role: 'CTO & Lead Developer',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah-Chen',
-    bio: 'Full-stack engineer specializing in scalable architectures and cloud solutions. Open-source enthusiast with multiple GitHub projects.',
-    social: {
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com',
-    },
+    id: 'systems',
+    name: 'Systems & DevOps',
+    role: 'Infrastructure · Reliability',
+    image: '',
+    bio: 'Runs the deploys, the dashboards, and the on-call rotation. The reason your 3 a.m. alerts go to us before they reach you.',
   },
   {
-    id: '3',
-    name: 'Michael Rodriguez',
-    role: 'Head of Design',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael-Rodriguez',
-    bio: 'Award-winning designer focused on creating intuitive user experiences. Expertise in design systems and mobile-first design.',
-    social: {
-      twitter: 'https://twitter.com',
-      linkedin: 'https://linkedin.com',
-    },
+    id: 'design',
+    name: 'Design',
+    role: 'Product · Interface',
+    image: '',
+    bio: 'Translates founder intent into wireframes, then into shipped product. Specialist in finding the smallest interface that still tells the truth.',
   },
   {
-    id: '4',
-    name: 'Emily Watson',
-    role: 'Product Manager',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Emily-Watson',
-    bio: 'Strategic thinker dedicated to building products that solve real problems. Data-driven approach to product development.',
-    social: {
-      linkedin: 'https://linkedin.com',
-    },
+    id: 'frontend',
+    name: 'Frontend',
+    role: 'React · Next.js',
+    image: '',
+    bio: 'Composability obsessive. Reads the React RFCs so you don\'t have to.',
   },
   {
-    id: '5',
-    name: 'David Park',
-    role: 'DevOps Engineer',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=David-Park',
-    bio: 'Cloud infrastructure expert ensuring system reliability and performance. Kubernetes and AWS certified professional.',
-    social: {
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com',
-    },
+    id: 'backend',
+    name: 'Backend',
+    role: 'Rails · NestJS · Postgres',
+    image: '',
+    bio: 'Boring databases, boring schemas, boring migrations. Keeps the data correct so the rest of us can be interesting.',
   },
   {
-    id: '6',
-    name: 'Lisa Anderson',
-    role: 'UX Researcher',
-    image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa-Anderson',
-    bio: 'Passionate about user research and behavioral psychology. Creates designs backed by data and user insights.',
-    social: {
-      twitter: 'https://twitter.com',
-      linkedin: 'https://linkedin.com',
-    },
+    id: 'mobile',
+    name: 'Mobile',
+    role: 'React Native · iOS · Android',
+    image: '',
+    bio: 'Ships parity across iOS and Android, then makes the iOS one feel a bit nicer because — be honest — it should.',
+  },
+  {
+    id: 'qa',
+    name: 'QA & Release',
+    role: 'Test · Release · Customer',
+    image: '',
+    bio: 'Not a QA in the classical sense — closer to "the person who reads every changelog and pings the user before bugs do."',
   },
 ]

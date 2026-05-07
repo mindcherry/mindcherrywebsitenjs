@@ -1,0 +1,191 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+        - generic [ref=e23]: Studio · Lahore
+      - navigation [ref=e25]:
+        - link "Home" [ref=e26] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e27] [cursor=pointer]:
+          - /url: /services
+        - link "Work" [ref=e28] [cursor=pointer]:
+          - /url: /portfolio
+        - link "About" [ref=e29] [cursor=pointer]:
+          - /url: /about
+        - link "Journal" [ref=e30] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e31] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact
+      - link "Start a project" [ref=e34] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e35]
+  - main [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Reply < 1 working day
+        - generic [ref=e44]: No SDR funnel · senior engineer first
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - heading "Tell us what you're building." [level=1] [ref=e47]:
+            - text: Tell us what
+            - text: you're building.
+          - paragraph [ref=e48]: Two paragraphs is plenty. We'll reply with whether — and how — we can help, plus a 30-minute call if it looks like a fit.
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - term [ref=e51]: Email
+              - definition [ref=e52]:
+                - link "hello@mindcherry.com" [ref=e53] [cursor=pointer]:
+                  - /url: mailto:hello@mindcherry.com
+            - generic [ref=e54]:
+              - term [ref=e55]: Phone (PKT)
+              - definition [ref=e56]:
+                - link "+92 349 029 0356" [ref=e57] [cursor=pointer]:
+                  - /url: tel:+923490290356
+            - generic [ref=e58]:
+              - term [ref=e59]: Studio
+              - definition [ref=e60]: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e61]:
+              - term [ref=e62]: Hours
+              - definition [ref=e63]:
+                - text: Mon — Fri · 09:00 → 18:00 PKT
+                - generic [ref=e64]: Overlap with EU mornings & US afternoons.
+          - figure "Fig. 01 where the first reply usually gets written" [ref=e65]:
+            - img "A flat-lay of a black spiral notepad, smartphone, and pencil on a light wooden desk" [ref=e67]
+            - generic [ref=e69]:
+              - generic [ref=e70]: Fig. 01
+              - generic [ref=e71]: where the first reply usually gets written
+        - complementary [ref=e72]:
+          - generic [ref=e73]:
+            - paragraph [ref=e74]: The brief
+            - heading "Four short fields, no qualifying questions." [level=2] [ref=e76]:
+              - text: Four short fields,
+              - text: no qualifying questions.
+            - group "Project enquiry form" [ref=e78]:
+              - generic [ref=e79]: Project enquiry form
+              - generic [ref=e80]:
+                - generic [ref=e81]: 01 / Your name
+                - textbox "01 / Your name" [ref=e82]:
+                  - /placeholder: Adeel Khan
+              - generic [ref=e83]:
+                - generic [ref=e84]: 02 / Email
+                - textbox "02 / Email" [ref=e85]:
+                  - /placeholder: adeel@yourcompany.com
+              - generic [ref=e86]:
+                - generic [ref=e87]: 03 / Engagement (optional)
+                - combobox "03 / Engagement (optional)" [ref=e88] [cursor=pointer]:
+                  - option "— pick a shape —" [selected]
+                  - option "Custom Software & MVP Development"
+                  - option "Architecture & Design"
+                  - option "Software Consultancy"
+                  - option "Not sure yet"
+              - generic [ref=e89]:
+                - generic [ref=e90]: 04 / Two paragraphs about the project
+                - textbox "04 / Two paragraphs about the project" [ref=e91]:
+                  - /placeholder: What you're building, what you've tried, and what you'd like our help with.
+              - generic [ref=e92]:
+                - button "Send the brief" [ref=e93]:
+                  - text: Send the brief
+                  - img [ref=e95]
+                - paragraph [ref=e97]:
+                  - text: Or email
+                  - link "hello@mindcherry.com" [ref=e98] [cursor=pointer]:
+                    - /url: mailto:hello@mindcherry.com
+                  - text: directly. Same humans either way.
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: What happens next
+        - heading "Three things, in order, no other surprises." [level=2] [ref=e104]:
+          - text: Three things, in order,
+          - text: no other surprises.
+      - list [ref=e105]:
+        - listitem [ref=e106]:
+          - generic [ref=e107]: Step · 01
+          - heading "Personal reply, < 1 working day" [level=3] [ref=e108]
+          - paragraph [ref=e109]: A senior engineer writes back. Real questions, no canned form letter. If we can't help, we'll tell you who can.
+        - listitem [ref=e110]:
+          - generic [ref=e111]: Step · 02
+          - heading "30-minute call" [level=3] [ref=e112]
+          - paragraph [ref=e113]: No deck, no demo. We listen, ask three or four sharp questions, and tell you whether the engagement is the right shape.
+        - listitem [ref=e114]:
+          - generic [ref=e115]: Step · 03
+          - heading "A two-page proposal" [level=3] [ref=e116]
+          - paragraph [ref=e117]: Scope, timeline, who from our side, what we'd need from yours, and a fixed price for the first slice. Sent within a week.
+      - paragraph [ref=e118]:
+        - text: Prefer to skip ahead?
+        - link "Book the 30-minute call directly →" [ref=e119] [cursor=pointer]:
+          - /url: https://calendly.com/adeel-lwxw/30min
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - img "MindCherry" [ref=e123]
+          - paragraph [ref=e140]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e141]:
+            - link "Twitter" [ref=e142] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e143]: T
+            - link "LinkedIn" [ref=e144] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e145]: L
+            - link "Instagram" [ref=e146] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e147]: I
+            - link "Facebook" [ref=e148] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e149]: F
+        - generic [ref=e150]:
+          - heading "Studio" [level=3] [ref=e151]
+          - list [ref=e152]:
+            - listitem [ref=e153]:
+              - link "About" [ref=e154] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e155]:
+              - link "Journal" [ref=e156] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e157]:
+              - link "Careers" [ref=e158] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e159]:
+          - heading "Work" [level=3] [ref=e160]
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - link "Selected work" [ref=e163] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e164]:
+              - link "Services" [ref=e165] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e166]:
+              - link "Process" [ref=e167] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e168]:
+          - heading "Reach" [level=3] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "hello@mindcherry.com" [ref=e172] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e173]:
+              - link "Schedule a call" [ref=e174] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e175]:
+              - link "+923490290356" [ref=e176] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e177]:
+          - heading "Address" [level=3] [ref=e178]
+          - paragraph [ref=e179]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e180]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e181]:
+        - paragraph [ref=e182]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e183]:
+          - link "Privacy" [ref=e184] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e185] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e191] [cursor=pointer]:
+    - img [ref=e192]

@@ -1,0 +1,219 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+      - button "Open menu" [ref=e24]:
+        - img [ref=e25]
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: The studio
+        - generic [ref=e32]: Seven engineers · Lahore
+      - generic [ref=e33]:
+        - heading "A small studio for ambitious founders." [level=1] [ref=e34]:
+          - text: A small studio
+          - text: for ambitious founders.
+        - paragraph [ref=e35]: MindCherry has been building product alongside founders since 2018. We're seven people in Lahore — engineers, designers, and operators — who'd rather ship one thing well than a portfolio of demos. We pick our work, we limit our headcount, and we stay until your engagement is no longer interesting (it usually takes a while).
+    - generic [ref=e38]:
+      - figure "Fig. 01 a Tuesday-afternoon kickoff, the back of the studio" [ref=e39]:
+        - img "Two members of the studio in mid-conversation, brick wall in soft focus behind them" [ref=e41]
+        - generic [ref=e43]:
+          - generic [ref=e44]: Fig. 01
+          - generic [ref=e45]: a Tuesday-afternoon kickoff, the back of the studio
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: Why we do this
+        - heading "Most agencies optimise for throughput. We optimise for the thing the founder actually cares about — and stay there." [level=2] [ref=e49]
+        - paragraph [ref=e50]: Most of what makes early-stage software hard isn't the code — it's the unsaid trade-offs, the missing brief, the founder who's wearing six hats. We absorb the technical hat early so the rest can be worn well.
+    - generic [ref=e53]:
+      - blockquote [ref=e54]: “We don't do throwaway demos. The first thing we ship to your users is the same code we'll be running in production three years from now.”
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - term [ref=e57]: Years in studio
+          - definition [ref=e58]: 8+
+        - generic [ref=e59]:
+          - term [ref=e60]: Engineers
+          - definition [ref=e61]: "7"
+        - generic [ref=e62]:
+          - term [ref=e63]: Avg engagement
+          - definition [ref=e64]: 14 mo
+        - generic [ref=e65]:
+          - term [ref=e66]: Repeat founders
+          - definition [ref=e67]: 78%
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - paragraph [ref=e71]: Commitments
+        - heading "Six things we will not compromise on." [level=2] [ref=e73]:
+          - text: Six things we will not
+          - text: compromise on.
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - generic [ref=e77]: "01"
+            - generic [ref=e78]:
+              - heading "Ease of scalability" [level=3] [ref=e79]
+              - paragraph [ref=e80]: Architectures that grow without rewrites — picking the boring, well-understood primitives over the trendy ones.
+          - listitem [ref=e81]:
+            - generic [ref=e82]: "02"
+            - generic [ref=e83]:
+              - heading "Instant impact" [level=3] [ref=e84]
+              - paragraph [ref=e85]: Pull-request-on-day-two, not week-three. We onboard fast and ship something usable inside the first sprint.
+          - listitem [ref=e86]:
+            - generic [ref=e87]: "03"
+            - generic [ref=e88]:
+              - heading "Expertise & experience" [level=3] [ref=e89]
+              - paragraph [ref=e90]: 15+ years of combined senior engineering across early-stage startups, SMBs, and enterprises.
+          - listitem [ref=e91]:
+            - generic [ref=e92]: "04"
+            - generic [ref=e93]:
+              - heading "Time-zone aligned" [level=3] [ref=e94]
+              - paragraph [ref=e95]: Pakistan-based, working comfortable mornings with EU clients and afternoons with US clients. Real overlap, not async-only.
+          - listitem [ref=e96]:
+            - generic [ref=e97]: "05"
+            - generic [ref=e98]:
+              - heading "Full flexibility" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Fixed-scope when you need predictability, time-and-materials when you need exploration. Switch freely.
+          - listitem [ref=e101]:
+            - generic [ref=e102]: "06"
+            - generic [ref=e103]:
+              - heading "Proactive support" [level=3] [ref=e104]
+              - paragraph [ref=e105]: We watch the on-call dashboards we built. You hear about issues from us before you hear about them from your users.
+        - complementary [ref=e106]:
+          - img "A close-up of a hand drawing technical lines on a blueprint" [ref=e108]
+          - paragraph [ref=e110]: “Boring on purpose” — pinned above the whiteboard since 2019.
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - paragraph [ref=e114]: The seven
+        - heading "Senior people, doing the work, with you in the loop." [level=2] [ref=e116]:
+          - text: Senior people, doing the work,
+          - text: with you in the loop.
+      - list [ref=e117]:
+        - listitem [ref=e118]:
+          - generic [ref=e119]: 01 / 07
+          - generic [ref=e120]:
+            - heading "Adeel" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Founding engineer · Technical PM
+          - paragraph [ref=e123]: Spends most days in code review and on-call. 12+ years across HIPAA-compliant healthtech, fintech, and marketplaces. Holds the architectural pen on every engagement.
+        - listitem [ref=e124]:
+          - generic [ref=e125]: 02 / 07
+          - generic [ref=e126]:
+            - heading "Systems & DevOps" [level=3] [ref=e127]
+            - paragraph [ref=e128]: Infrastructure · Reliability
+          - paragraph [ref=e129]: Runs the deploys, the dashboards, and the on-call rotation. The reason your 3 a.m. alerts go to us before they reach you.
+        - listitem [ref=e130]:
+          - generic [ref=e131]: 03 / 07
+          - generic [ref=e132]:
+            - heading "Design" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Product · Interface
+          - paragraph [ref=e135]: Translates founder intent into wireframes, then into shipped product. Specialist in finding the smallest interface that still tells the truth.
+        - listitem [ref=e136]:
+          - generic [ref=e137]: 04 / 07
+          - generic [ref=e138]:
+            - heading "Frontend" [level=3] [ref=e139]
+            - paragraph [ref=e140]: React · Next.js
+          - paragraph [ref=e141]: Composability obsessive. Reads the React RFCs so you don't have to.
+        - listitem [ref=e142]:
+          - generic [ref=e143]: 05 / 07
+          - generic [ref=e144]:
+            - heading "Backend" [level=3] [ref=e145]
+            - paragraph [ref=e146]: Rails · NestJS · Postgres
+          - paragraph [ref=e147]: Boring databases, boring schemas, boring migrations. Keeps the data correct so the rest of us can be interesting.
+        - listitem [ref=e148]:
+          - generic [ref=e149]: 06 / 07
+          - generic [ref=e150]:
+            - heading "Mobile" [level=3] [ref=e151]
+            - paragraph [ref=e152]: React Native · iOS · Android
+          - paragraph [ref=e153]: Ships parity across iOS and Android, then makes the iOS one feel a bit nicer because — be honest — it should.
+        - listitem [ref=e154]:
+          - generic [ref=e155]: 07 / 07
+          - generic [ref=e156]:
+            - heading "QA & Release" [level=3] [ref=e157]
+            - paragraph [ref=e158]: Test · Release · Customer
+          - paragraph [ref=e159]: Not a QA in the classical sense — closer to "the person who reads every changelog and pings the user before bugs do."
+      - paragraph [ref=e160]: We hire roughly one person every 18 months — usually someone we've already worked with. The seventh seat is currently filled by whichever client engagement is the most demanding that quarter.
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - paragraph [ref=e165]: Talk to us
+        - heading "We answer every email in person." [level=2] [ref=e167]:
+          - text: We answer every email
+          - text: in person.
+        - paragraph [ref=e168]: No SDR funnel. No qualifying form. The first reply you get is from the engineer or designer who'd run your project.
+      - generic [ref=e169]:
+        - link "Start a project" [ref=e170] [cursor=pointer]:
+          - /url: /contact
+          - text: Start a project
+          - img [ref=e172]
+        - link "hello@mindcherry.com" [ref=e174] [cursor=pointer]:
+          - /url: mailto:hello@mindcherry.com
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e175]:
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - img "MindCherry" [ref=e178]
+          - paragraph [ref=e195]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e196]:
+            - link "Twitter" [ref=e197] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e198]: T
+            - link "LinkedIn" [ref=e199] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e200]: L
+            - link "Instagram" [ref=e201] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e202]: I
+            - link "Facebook" [ref=e203] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e204]: F
+        - generic [ref=e205]:
+          - heading "Studio" [level=3] [ref=e206]
+          - list [ref=e207]:
+            - listitem [ref=e208]:
+              - link "About" [ref=e209] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e210]:
+              - link "Journal" [ref=e211] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e212]:
+              - link "Careers" [ref=e213] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e214]:
+          - heading "Work" [level=3] [ref=e215]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "Selected work" [ref=e218] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e219]:
+              - link "Services" [ref=e220] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e221]:
+              - link "Process" [ref=e222] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e223]:
+          - heading "Reach" [level=3] [ref=e224]
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - link "hello@mindcherry.com" [ref=e227] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e228]:
+              - link "Schedule a call" [ref=e229] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e230]:
+              - link "+923490290356" [ref=e231] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e232]:
+          - heading "Address" [level=3] [ref=e233]
+          - paragraph [ref=e234]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e235]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e236]:
+        - paragraph [ref=e237]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e238]:
+          - link "Privacy" [ref=e239] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e240] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e246] [cursor=pointer]:
+    - img [ref=e247]

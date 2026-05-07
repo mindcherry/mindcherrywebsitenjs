@@ -61,5 +61,53 @@
     "photographer": "Design _InDepth",
     "alt": "Hands writing on a marketing book under the warm glow of a desk lamp at night.",
     "page": "https://www.pexels.com/photo/a-person-writing-in-book-13846124/"
+  },
+  {
+    "path": "public/images/studio/interior.jpg",
+    "id": 18118289,
+    "photographer": "Susie Han",
+    "alt": "A minimalist office chair in soft sunlight casting dramatic shadows indoors."
+  },
+  {
+    "path": "public/images/studio/whiteboard.jpg",
+    "id": 1109541,
+    "photographer": "Lex Photography",
+    "alt": "Close-up of hand drawing intricate technical designs on blueprint with pen, ideal for engineering or architecture themes."
+  },
+  {
+    "path": "public/images/studio/founders.jpg",
+    "id": 36270134,
+    "photographer": "Guillermo Berlin",
+    "alt": "Two men engaged in conversation with a blurred focus against a brick wall background."
+  },
+  {
+    "path": "public/images/services/mvp.jpg",
+    "id": 196645,
+    "photographer": "picjumbo.com",
+    "alt": "Detailed close-up of a hand-drawn wireframe design on paper for a UX project."
+  },
+  {
+    "path": "public/images/services/architecture.jpg",
+    "id": 10985350,
+    "photographer": "Nikita Korchagin",
+    "alt": "A close-up of a detailed engineering blueprint featuring a pen and pencil placed on a desk."
+  },
+  {
+    "path": "public/images/services/consultancy.jpg",
+    "id": 7642115,
+    "photographer": "Alena Darmel",
+    "alt": "Two professionals discussing documents at a desk with a laptop, focused on collaboration."
+  },
+  {
+    "path": "public/images/contact/desk-phone.jpg",
+    "id": 354102,
+    "photographer": "Porapak Apichodilok",
+    "alt": "A flat lay of a black spiral notepad, smartphone, and pencil on a light wooden desk."
+  },
+  {
+    "path": "public/images/blog/reading.jpg",
+    "id": 6061,
+    "photographer": "Karolina Grabowska www.kaboompics.com",
+    "alt": "A bottle and an opened newspaper on a wooden table with focus on typography."
   }
 ]
