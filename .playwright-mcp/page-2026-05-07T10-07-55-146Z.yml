@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e14]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e21]: An error occurred
+        - generic [ref=e23]: An error occurred that Sanity Studio was unable to recover from.
+        - generic [ref=e25]:
+          - code [ref=e27]: "Configuration must contain `projectId`"
+          - code [ref=e29]: "Error: Configuration must contain `projectId` at initConfig (http://localhost:3000/_next/static/chunks/0zh9_%40sanity_client_dist_09-1.5g._.js:922:53) at SanityClient.config (http://localhost:3000/_next/static/chunks/0zh9_%40sanity_client_dist_09-1.5g._.js:3111:91) at new SanityClient (http://localhost:3000/_next/static/chunks/0zh9_%40sanity_client_dist_09-1.5g._.js:3084:14) at createClient (http://localhost:3000/_next/static/chunks/0zh9_%40sanity_client_dist_09-1.5g._.js:3322:20) at _createAuthStore (http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:5998:23) at http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:6192:191 at memoized (http://localhost:3000/_next/static/chunks/node_modules_lodash-es_10zy3xp._.js:3899:27) at getAuthStore (http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:97177:12) at http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:97130:30 at Array.map (<anonymous>) at http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:97105:21 at Array.map (<anonymous>) at prepareConfig (http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:97090:38) at WorkspacesProvider (http://localhost:3000/_next/static/chunks/node_modules_sanity_lib_index_0u1ma7j.js:97657:50) at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:15037:24) at renderWithHooks (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:4620:24) at updateFunctionComponent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6081:21) at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6691:24) at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74) at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97) at workLoopSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9449:40) at renderRootSync (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9433:13) at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9098:47) at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9) at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)"
+      - generic [ref=e30]:
+        - button "Retry" [ref=e32]:
+          - generic [ref=e34]:
+            - img [ref=e37]
+            - generic [ref=e43]: Retry
+        - button "Copy error details" [ref=e45]:
+          - generic [ref=e47]:
+            - img [ref=e50]
+            - generic [ref=e55]: Copy error details
+    - list
+  - generic [ref=e8] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e9]:
+      - img [ref=e10]
+    - generic [ref=e56]:
+      - button "Open issues overlay" [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: "0"
+          - generic [ref=e60]: "1"
+        - generic [ref=e61]: Issue
+      - button "Collapse issues badge" [ref=e62]:
+        - img [ref=e63]
+  - alert [ref=e13]

@@ -1,0 +1,38 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: MindCherry Studio · setup
+      - heading "One short step to publish posts." [level=1] [ref=e6]
+      - paragraph [ref=e7]:
+        - text: The embedded Sanity Studio at
+        - code [ref=e8]: /studio
+        - text: needs a project to connect to. Spin one up in 60 seconds, then drop two values into
+        - code [ref=e9]: .env.local
+        - text: .
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - text: Create a free project at
+          - link "sanity.io/manage" [ref=e12] [cursor=pointer]:
+            - /url: https://www.sanity.io/manage
+          - text: . Choose dataset
+          - strong [ref=e13]: production
+          - text: .
+        - listitem [ref=e14]:
+          - text: Add
+          - code [ref=e15]: http://localhost:3000
+          - text: (and your prod domain later) to
+          - strong [ref=e16]: API → CORS Origins
+          - text: in the project settings.
+        - listitem [ref=e17]:
+          - text: Copy the project ID from the dashboard URL and paste it into
+          - code [ref=e18]: .env.local
+          - text: ":"
+          - generic [ref=e19]: NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id NEXT_PUBLIC_SANITY_DATASET=production
+        - listitem [ref=e20]:
+          - text: Restart
+          - code [ref=e21]: npm run dev
+          - text: and reload this page. The studio will load with the post / author / category schemas already wired up.
+      - paragraph [ref=e22]: Marketing pages render with placeholder posts until the studio is connected — no broken layouts.
+  - button "Open Next.js Dev Tools" [ref=e28] [cursor=pointer]:
+    - img [ref=e29]
+  - alert [ref=e32]

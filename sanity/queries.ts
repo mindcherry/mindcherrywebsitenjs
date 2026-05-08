@@ -1,143 +1,92 @@
-import { client } from './client'
-import { BlogPost } from '@/lib/types'
+import { getClient, isSanityConfigured } from './client'
+import type { BlogPost } from '@/lib/types'
 
 const postFields = `
   _id,
   title,
-  slug,
+  "slug": slug.current,
   excerpt,
   publishedAt,
   mainImage {
-    asset->{
-      url
-    },
+    asset->{ url, metadata { dimensions, lqip } },
     alt
   },
   body,
   author->{
     _id,
     name,
-    image {
-      asset->{
-        url
-      }
-    },
+    "slug": slug.current,
+    image { asset->{ url } },
     bio
   },
-  categories[]->{
-    _id,
-    title,
-    slug
-  }
+  categories[]->{ _id, title, "slug": slug.current }
 `
 
-export async function getPosts(): Promise<BlogPost[]> {
+async function safeFetch<T>(query: string, params: Record<string, unknown> = {}, fallback: T): Promise<T> {
+  if (!isSanityConfigured) return fallback
   try {
-    const posts = await client.fetch(
-      `*[_type == "post"] | order(publishedAt desc) {
-        ${postFields}
-      }`
-    )
-    return posts || []
+    const result = await getClient().fetch<T>(query, params)
+    return result ?? fallback
   } catch (error) {
-    console.error('Error fetching posts:', error)
-    return []
+    console.error('[sanity] query failed:', error)
+    return fallback
   }
+}
+
+export async function getPosts(): Promise<BlogPost[]> {
+  return safeFetch<BlogPost[]>(
+    `*[_type == "post" && defined(slug.current)] | order(publishedAt desc) { ${postFields} }`,
+    {},
+    [],
+  )
 }
 
 export async function getPost(slug: string): Promise<BlogPost | null> {
-  try {
-    const post = await client.fetch(
-      `*[_type == "post" && slug.current == $slug][0] {
-        ${postFields}
-      }`,
-      { slug }
-    )
-    return post || null
-  } catch (error) {
-    console.error('Error fetching post:', error)
-    return null
-  }
+  return safeFetch<BlogPost | null>(
+    `*[_type == "post" && slug.current == $slug][0] { ${postFields} }`,
+    { slug },
+    null,
+  )
 }
 
 export async function getPostSlugs(): Promise<string[]> {
-  try {
-    const slugs = await client.fetch(
-      `*[_type == "post"] {
-        slug
-      }`
-    )
-    return slugs?.map((post: any) => post.slug.current) || []
-  } catch (error) {
-    console.error('Error fetching post slugs:', error)
-    return []
-  }
+  const slugs = await safeFetch<{ slug: string }[]>(
+    `*[_type == "post" && defined(slug.current)] { "slug": slug.current }`,
+    {},
+    [],
+  )
+  return slugs.map((s) => s.slug)
 }
 
 export async function getPostsByCategory(categorySlug: string): Promise<BlogPost[]> {
-  try {
-    const posts = await client.fetch(
-      `*[_type == "post" && $slug in categories[].slug.current] | order(publishedAt desc) {
-        ${postFields}
-      }`,
-      { slug: categorySlug }
-    )
-    return posts || []
-  } catch (error) {
-    console.error('Error fetching posts by category:', error)
-    return []
-  }
+  return safeFetch<BlogPost[]>(
+    `*[_type == "post" && $slug in categories[]->slug.current] | order(publishedAt desc) { ${postFields} }`,
+    { slug: categorySlug },
+    [],
+  )
 }
 
 export async function getRelatedPosts(slug: string, limit = 3): Promise<BlogPost[]> {
-  try {
-    const post = await getPost(slug)
-    if (!post) return []
-
-    const relatedPosts = await client.fetch(
-      `*[_type == "post" && slug.current != $slug && categories[]._ref in $categoryRefs] | order(publishedAt desc)[0...$limit] {
-        ${postFields}
-      }`,
-      {
-        slug,
-        categoryRefs: post.categories?.map((cat) => cat._id) || [],
-        limit: limit - 1,
-      }
-    )
-
-    return relatedPosts || []
-  } catch (error) {
-    console.error('Error fetching related posts:', error)
-    return []
-  }
+  return safeFetch<BlogPost[]>(
+    `*[_type == "post" && slug.current != $slug && count((categories[]->_id)[@ in *[_type=="post" && slug.current==$slug][0].categories[]._ref]) > 0]
+       | order(publishedAt desc)[0...$limit] { ${postFields} }`,
+    { slug, limit },
+    [],
+  )
 }
 
 export async function searchPosts(query: string): Promise<BlogPost[]> {
-  try {
-    const posts = await client.fetch(
-      `*[_type == "post" && (title match $query || excerpt match $query || body match $query)] | order(publishedAt desc) {
-        ${postFields}
-      }`,
-      { query: `*${query}*` }
-    )
-    return posts || []
-  } catch (error) {
-    console.error('Error searching posts:', error)
-    return []
-  }
+  return safeFetch<BlogPost[]>(
+    `*[_type == "post" && (title match $q || excerpt match $q || pt::text(body) match $q)] | order(publishedAt desc) { ${postFields} }`,
+    { q: `*${query}*` },
+    [],
+  )
 }
 
 export async function getLatestPosts(limit = 3): Promise<BlogPost[]> {
-  try {
-    const posts = await client.fetch(
-      `*[_type == "post"] | order(publishedAt desc)[0...$limit] {
-        ${postFields}
-      }`,
-      { limit: limit - 1 }
-    )
-    return posts || []
-  } catch (error) {
-    console.error('Error fetching latest posts:', error)
-    return []
-  }
+  return safeFetch<BlogPost[]>(
+    `*[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...$limit] { ${postFields} }`,
+    { limit },
+    [],
+  )
 }

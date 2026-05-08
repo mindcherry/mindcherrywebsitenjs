@@ -1,0 +1,307 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+        - generic [ref=e23]: Studio · Lahore
+      - navigation [ref=e25]:
+        - link "Home" [ref=e26] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e27] [cursor=pointer]:
+          - /url: /services
+          - text: Services
+        - link "Work" [ref=e29] [cursor=pointer]:
+          - /url: /portfolio
+        - link "About" [ref=e30] [cursor=pointer]:
+          - /url: /about
+        - link "Journal" [ref=e31] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e32] [cursor=pointer]:
+          - /url: /contact
+      - link "Start a project" [ref=e34] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e35]
+  - main [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Engagements
+        - generic [ref=e44]: Three shapes — pick what fits
+      - generic [ref=e45]:
+        - heading "Pick the smallest shape that works." [level=1] [ref=e46]:
+          - text: Pick the smallest
+          - text: shape that works.
+        - paragraph [ref=e47]: We do three things, honestly named. Most engagements start in one shape and morph into another as the company changes — so we've made each one upgradeable into the next.
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Engagement · 01 of 03
+        - heading "Custom Software & MVP Development" [level=2] [ref=e53]:
+          - text: Custom Software
+          - generic [ref=e54]: "& MVP Development"
+        - paragraph [ref=e55]: We sit with founders to brainstorm, design, and ship product tailored to a specific business thesis — without losing sight of time-to-market. Most of our work begins as a v1 and grows with the company.
+      - figure "Fig. 01 a Tuesday wireframe — the cheapest place to be wrong" [ref=e57]:
+        - img "A close-up of hand-drawn wireframes on paper, sketched in pencil" [ref=e59]
+        - generic [ref=e61]:
+          - generic [ref=e62]: Fig. 01
+          - generic [ref=e63]: a Tuesday wireframe — the cheapest place to be wrong
+      - generic [ref=e64]:
+        - heading "What we ship" [level=3] [ref=e65]
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - generic [ref=e68]: +
+            - text: Production-ready v1 inside 8 weeks
+          - listitem [ref=e69]:
+            - generic [ref=e70]: +
+            - text: Founder in every standup
+          - listitem [ref=e71]:
+            - generic [ref=e72]: +
+            - text: Behind-feature-flag rollout from day one
+          - listitem [ref=e73]:
+            - generic [ref=e74]: +
+            - text: Source code, repos, and infra you own outright
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - heading "What we don't do" [level=3] [ref=e78]
+          - list [ref=e79]:
+            - listitem [ref=e80]:
+              - generic [ref=e81]: —
+              - text: No PowerPoint demos that aren't real product
+            - listitem [ref=e82]:
+              - generic [ref=e83]: —
+              - text: No vendor lock-in or proprietary tooling
+            - listitem [ref=e84]:
+              - generic [ref=e85]: —
+              - text: No throwaway "MVP" that gets rewritten in month four
+        - generic [ref=e86]:
+          - heading "Default toolkit" [level=3] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]: Founding-engineer mindset
+            - listitem [ref=e90]: Production-ready in weeks, not quarters
+            - listitem [ref=e91]: TypeScript, Next.js, Rails, Django, Laravel
+            - listitem [ref=e92]: Postgres, MongoDB, MySQL, Redis
+            - listitem [ref=e93]: Stripe, Twilio, OpenAI, AWS, GCP
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - paragraph [ref=e98]: Engagement · 02 of 03
+        - heading "Architecture & Design" [level=2] [ref=e99]:
+          - text: Architecture
+          - generic [ref=e100]: "& Design"
+        - paragraph [ref=e101]: Senior architects and engineering managers who help you shape an upcoming project — covering its technical and execution dimensions before a single feature is built.
+      - figure "Fig. 02 a system diagram is cheaper than a refactor" [ref=e103]:
+        - img "Engineering blueprint with pen and pencil on paper" [ref=e105]
+        - generic [ref=e107]:
+          - generic [ref=e108]: Fig. 02
+          - generic [ref=e109]: a system diagram is cheaper than a refactor
+      - generic [ref=e110]:
+        - heading "What we ship" [level=3] [ref=e111]
+        - list [ref=e112]:
+          - listitem [ref=e113]:
+            - generic [ref=e114]: +
+            - text: System & data-model walkthrough
+          - listitem [ref=e115]:
+            - generic [ref=e116]: +
+            - text: Risk register with mitigation owners
+          - listitem [ref=e117]:
+            - generic [ref=e118]: +
+            - text: Cloud + DevOps blueprint
+          - listitem [ref=e119]:
+            - generic [ref=e120]: +
+            - text: Hiring plan & first three job specs
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - heading "What we don't do" [level=3] [ref=e124]
+          - list [ref=e125]:
+            - listitem [ref=e126]:
+              - generic [ref=e127]: —
+              - text: No 200-page deliverable nobody reads
+            - listitem [ref=e128]:
+              - generic [ref=e129]: —
+              - text: No microservices for the sake of it
+            - listitem [ref=e130]:
+              - generic [ref=e131]: —
+              - text: No "best-practice" handed down without context
+        - generic [ref=e132]:
+          - heading "Default toolkit" [level=3] [ref=e133]
+          - list [ref=e134]:
+            - listitem [ref=e135]: System & data-model design
+            - listitem [ref=e136]: Cloud and DevOps blueprints
+            - listitem [ref=e137]: Performance & scaling reviews
+            - listitem [ref=e138]: Security and compliance reviews
+            - listitem [ref=e139]: Hiring plan & team scaffolding
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - paragraph [ref=e144]: Engagement · 03 of 03
+        - heading "Software Consultancy" [level=2] [ref=e145]
+        - paragraph [ref=e146]: A consulting team of seasoned architects and developers with 15+ years of combined experience working with startups, SMBs, and enterprises — embedded with your team for a focused engagement.
+      - figure "Fig. 03 half-day reviews land more value than month-long audits" [ref=e148]:
+        - img "Two professionals reviewing documents at a desk with a laptop" [ref=e150]
+        - generic [ref=e152]:
+          - generic [ref=e153]: Fig. 03
+          - generic [ref=e154]: half-day reviews land more value than month-long audits
+      - generic [ref=e155]:
+        - heading "What we ship" [level=3] [ref=e156]
+        - list [ref=e157]:
+          - listitem [ref=e158]:
+            - generic [ref=e159]: +
+            - text: Read of the codebase + verbal walkthrough
+          - listitem [ref=e160]:
+            - generic [ref=e161]: +
+            - text: Two-page action plan with owner + ETA
+          - listitem [ref=e162]:
+            - generic [ref=e163]: +
+            - text: 90-day check-in to verify the moves landed
+          - listitem [ref=e164]:
+            - generic [ref=e165]: +
+            - text: Optional fractional CTO hours
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - heading "What we don't do" [level=3] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - generic [ref=e172]: —
+              - text: No invoice for "thinking time"
+            - listitem [ref=e173]:
+              - generic [ref=e174]: —
+              - text: No moonlit consultants we've never worked with
+            - listitem [ref=e175]:
+              - generic [ref=e176]: —
+              - text: No retainers without a measurable scope
+        - generic [ref=e177]:
+          - heading "Default toolkit" [level=3] [ref=e178]
+          - list [ref=e179]:
+            - listitem [ref=e180]: Technical due diligence
+            - listitem [ref=e181]: Code & architecture audits
+            - listitem [ref=e182]: Migration strategy (Wordpress → Next.js, monolith → services)
+            - listitem [ref=e183]: Fractional CTO engagements
+            - listitem [ref=e184]: Vendor / contractor evaluations
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - paragraph [ref=e188]: The toolkit
+        - heading "Boring choices, made on purpose." [level=2] [ref=e190]
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - heading "Languages" [level=3] [ref=e193]
+          - list [ref=e194]:
+            - listitem [ref=e195]: TypeScript
+            - listitem [ref=e196]: Node.js
+            - listitem [ref=e197]: Ruby
+            - listitem [ref=e198]: Python
+            - listitem [ref=e199]: PHP
+        - generic [ref=e200]:
+          - heading "Frameworks" [level=3] [ref=e201]
+          - list [ref=e202]:
+            - listitem [ref=e203]: Next.js
+            - listitem [ref=e204]: NestJS
+            - listitem [ref=e205]: Ruby on Rails
+            - listitem [ref=e206]: Django
+            - listitem [ref=e207]: Laravel
+        - generic [ref=e208]:
+          - heading "Frontend" [level=3] [ref=e209]
+          - list [ref=e210]:
+            - listitem [ref=e211]: React
+            - listitem [ref=e212]: Tailwind
+            - listitem [ref=e213]: Mantine
+            - listitem [ref=e214]: Chakra UI
+        - generic [ref=e215]:
+          - heading "Databases" [level=3] [ref=e216]
+          - list [ref=e217]:
+            - listitem [ref=e218]: PostgreSQL
+            - listitem [ref=e219]: MongoDB
+            - listitem [ref=e220]: MySQL
+            - listitem [ref=e221]: Redis
+      - paragraph [ref=e222]: We do not learn frameworks on your dime. If a tool isn't on this list, we'll either bring in a specialist we've already worked with, or recommend a different studio for that engagement.
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - paragraph [ref=e227]: How we work
+        - heading "Discover · Architect · Build · Scale — in that exact order." [level=2] [ref=e229]:
+          - text: Discover · Architect · Build · Scale —
+          - text: in that exact order.
+      - link "See the four-step process" [ref=e230] [cursor=pointer]:
+        - /url: /#process
+        - text: See the four-step process
+        - img [ref=e231]
+    - generic [ref=e235]:
+      - generic [ref=e236]:
+        - heading "Which shape do you need?" [level=2] [ref=e237]:
+          - text: Which shape
+          - text: do you need?
+        - paragraph [ref=e238]: Email us with two paragraphs about your project. The first reply comes from a senior engineer, usually inside a working day.
+      - generic [ref=e239]:
+        - link "Start a project" [ref=e240] [cursor=pointer]:
+          - /url: /contact
+          - text: Start a project
+          - img [ref=e242]
+        - link "Or book a call →" [ref=e244] [cursor=pointer]:
+          - /url: https://calendly.com/adeel-lwxw/30min
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - img "MindCherry" [ref=e248]
+          - paragraph [ref=e265]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e266]:
+            - link "Twitter" [ref=e267] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e268]: T
+            - link "LinkedIn" [ref=e269] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e270]: L
+            - link "Instagram" [ref=e271] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e272]: I
+            - link "Facebook" [ref=e273] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e274]: F
+        - generic [ref=e275]:
+          - heading "Studio" [level=3] [ref=e276]
+          - list [ref=e277]:
+            - listitem [ref=e278]:
+              - link "About" [ref=e279] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e280]:
+              - link "Journal" [ref=e281] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e282]:
+              - link "Careers" [ref=e283] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e284]:
+          - heading "Work" [level=3] [ref=e285]
+          - list [ref=e286]:
+            - listitem [ref=e287]:
+              - link "Selected work" [ref=e288] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e289]:
+              - link "Services" [ref=e290] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e291]:
+              - link "Process" [ref=e292] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e293]:
+          - heading "Reach" [level=3] [ref=e294]
+          - list [ref=e295]:
+            - listitem [ref=e296]:
+              - link "hello@mindcherry.com" [ref=e297] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e298]:
+              - link "Schedule a call" [ref=e299] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e300]:
+              - link "+923490290356" [ref=e301] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e302]:
+          - heading "Address" [level=3] [ref=e303]
+          - paragraph [ref=e304]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e305]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e306]:
+        - paragraph [ref=e307]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e308]:
+          - link "Privacy" [ref=e309] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e310] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e316] [cursor=pointer]:
+    - img [ref=e317]

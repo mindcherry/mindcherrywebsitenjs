@@ -1,0 +1,215 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+        - generic [ref=e23]: Studio · Lahore
+      - navigation [ref=e25]:
+        - link "Home" [ref=e26] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e27] [cursor=pointer]:
+          - /url: /services
+        - link "Work" [ref=e28] [cursor=pointer]:
+          - /url: /portfolio
+          - text: Work
+        - link "About" [ref=e30] [cursor=pointer]:
+          - /url: /about
+        - link "Journal" [ref=e31] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e32] [cursor=pointer]:
+          - /url: /contact
+      - link "Start a project" [ref=e34] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e35]
+  - main [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Selected work
+        - generic [ref=e44]: Two products · still maintained
+      - generic [ref=e45]:
+        - heading "Two cases, shown honestly." [level=1] [ref=e46]:
+          - text: Two cases,
+          - text: shown honestly.
+        - paragraph [ref=e47]: We'd rather walk you through two products we still ship to than a logo wall of clients we don't. Here's the work — what we built, what was hard, what we'd do again.
+    - article [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Case · 01 of 02
+          - generic [ref=e53]: PropTech
+          - generic [ref=e55]: 2023 → ongoing
+          - generic [ref=e57]: 3 engineers · 1 designer
+        - heading "Arcadia." [level=2] [ref=e58]
+        - paragraph [ref=e59]: Real-estate classifieds platform for individuals and agencies
+        - figure [ref=e60]:
+          - img "Arcadia" [ref=e62]
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - heading "The brief" [level=3] [ref=e66]
+            - paragraph [ref=e67]: An online real-estate classifieds portal that gives both buyers and sellers — individuals and agencies — a clean, fast way to manage and inquire about listings. Built around a property graph that scales to millions of listings without breaking search.
+            - heading "What was hard" [level=3] [ref=e68]
+            - paragraph [ref=e69]: “The hardest part wasn't the listings — it was modelling the messy ownership graph (agency, sub-agency, agent, individual) without making the search UX confusing. We rewrote the data model twice in week three; the second one stuck.”
+          - generic [ref=e70]:
+            - heading "Outcomes" [level=3] [ref=e71]
+            - list [ref=e72]:
+              - listitem [ref=e73]:
+                - generic [ref=e74]: "01"
+                - paragraph [ref=e75]: Faceted search across 500k+ active listings
+              - listitem [ref=e76]:
+                - generic [ref=e77]: "02"
+                - paragraph [ref=e78]: Sub-second p95 search latency
+              - listitem [ref=e79]:
+                - generic [ref=e80]: "03"
+                - paragraph [ref=e81]: Native agency dashboards for inquiry management
+              - listitem [ref=e82]:
+                - generic [ref=e83]: "04"
+                - paragraph [ref=e84]: Built-in lead routing & saved-search alerts
+            - heading "Stack" [level=3] [ref=e85]
+            - list [ref=e86]:
+              - listitem [ref=e87]: Next.js
+              - listitem [ref=e88]: TypeScript
+              - listitem [ref=e89]: PostgreSQL
+              - listitem [ref=e90]: Elasticsearch
+              - listitem [ref=e91]: AWS
+    - article [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95]: Case · 02 of 02
+          - generic [ref=e97]: HealthTech
+          - generic [ref=e99]: 2024 → ongoing
+          - generic [ref=e101]: 2 engineers · 1 mobile · 1 compliance
+        - heading "Mindwell." [level=2] [ref=e102]
+        - paragraph [ref=e103]: HIPAA-compliant telehealth platform for therapists and patients
+        - figure [ref=e104]:
+          - img "Mindwell" [ref=e106]
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - heading "The brief" [level=3] [ref=e110]
+            - paragraph [ref=e111]: A telehealth platform that re-imagines how therapists and patients interact, schedule, and follow up. The product replaces three legacy tools — calendar, EHR, and chat — with a single intuitive surface, while remaining HIPAA-compliant from day one.
+            - heading "What was hard" [level=3] [ref=e112]
+            - paragraph [ref=e113]: “HIPAA compliance is mostly a documentation problem dressed up as a software problem. We embedded a part-time compliance officer for the first six weeks and that turned out to be the single highest-leverage decision on the engagement.”
+          - generic [ref=e114]:
+            - heading "Outcomes" [level=3] [ref=e115]
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - generic [ref=e118]: "01"
+                - paragraph [ref=e119]: HIPAA-compliant audio + video sessions
+              - listitem [ref=e120]:
+                - generic [ref=e121]: "02"
+                - paragraph [ref=e122]: Cut booking-to-session time from 3 days to 4 hours
+              - listitem [ref=e123]:
+                - generic [ref=e124]: "03"
+                - paragraph [ref=e125]: Therapist availability sync with Google & iCloud
+              - listitem [ref=e126]:
+                - generic [ref=e127]: "04"
+                - paragraph [ref=e128]: Encrypted messaging with audit trails
+            - heading "Stack" [level=3] [ref=e129]
+            - list [ref=e130]:
+              - listitem [ref=e131]: Next.js
+              - listitem [ref=e132]: NestJS
+              - listitem [ref=e133]: PostgreSQL
+              - listitem [ref=e134]: WebRTC
+              - listitem [ref=e135]: Twilio
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - paragraph [ref=e139]: Currently writing up
+        - heading "Two more engagements should publish next quarter." [level=2] [ref=e141]:
+          - text: Two more engagements
+          - text: should publish next quarter.
+      - list [ref=e142]:
+        - listitem [ref=e143]:
+          - article [ref=e144]:
+            - generic [ref=e145]: Case · 03
+            - heading "Internal back-office for a B2B fintech" [level=3] [ref=e146]
+            - paragraph [ref=e147]: Confidential · 2025 → ongoing
+            - paragraph [ref=e148]: Replaced six spreadsheets and one Notion database with a typed, audited admin surface. Currently saving the team approximately 14 person-hours a week.
+        - listitem [ref=e149]:
+          - article [ref=e150]:
+            - generic [ref=e151]: Case · 04
+            - heading "Marketplace operator console" [level=3] [ref=e152]
+            - paragraph [ref=e153]: Confidential · 2025 → ongoing
+            - paragraph [ref=e154]: Tooling for a marketplace ops team that was previously running on shared logins to the customer-facing app. Real role-based access, real audit log, real keyboard shortcuts.
+      - paragraph [ref=e155]: We don't publish a case study until the engagement has been live for at least six months and the founder is happy for us to do so. That's why this list is short — and why it stays current.
+    - generic [ref=e158]:
+      - generic [ref=e159]:
+        - heading "Want a project on this list?" [level=2] [ref=e160]:
+          - text: Want a project
+          - text: on this list?
+        - paragraph [ref=e161]: Email us a paragraph about what you're building. We'll reply within a working day with whether — and how — we can help.
+      - link "Start a project" [ref=e163] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e165]
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - generic [ref=e169]:
+          - img "MindCherry" [ref=e170]
+          - paragraph [ref=e187]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e188]:
+            - link "Twitter" [ref=e189] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e190]: T
+            - link "LinkedIn" [ref=e191] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e192]: L
+            - link "Instagram" [ref=e193] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e194]: I
+            - link "Facebook" [ref=e195] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e196]: F
+        - generic [ref=e197]:
+          - heading "Studio" [level=3] [ref=e198]
+          - list [ref=e199]:
+            - listitem [ref=e200]:
+              - link "About" [ref=e201] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e202]:
+              - link "Journal" [ref=e203] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e204]:
+              - link "Careers" [ref=e205] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e206]:
+          - heading "Work" [level=3] [ref=e207]
+          - list [ref=e208]:
+            - listitem [ref=e209]:
+              - link "Selected work" [ref=e210] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e211]:
+              - link "Services" [ref=e212] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e213]:
+              - link "Process" [ref=e214] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e215]:
+          - heading "Reach" [level=3] [ref=e216]
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - link "hello@mindcherry.com" [ref=e219] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e220]:
+              - link "Schedule a call" [ref=e221] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e222]:
+              - link "+923490290356" [ref=e223] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e224]:
+          - heading "Address" [level=3] [ref=e225]
+          - paragraph [ref=e226]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e227]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e228]:
+        - paragraph [ref=e229]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e230]:
+          - link "Privacy" [ref=e231] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e232] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e238] [cursor=pointer]:
+    - img [ref=e239]
+  - alert [ref=e242]

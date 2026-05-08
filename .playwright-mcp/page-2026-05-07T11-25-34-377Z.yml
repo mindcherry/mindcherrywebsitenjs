@@ -1,0 +1,160 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "MindCherry — home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "MindCherry" [ref=e6]
+        - generic [ref=e23]: Studio · Lahore
+      - navigation [ref=e25]:
+        - link "Home" [ref=e26] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e27] [cursor=pointer]:
+          - /url: /services
+        - link "Work" [ref=e28] [cursor=pointer]:
+          - /url: /portfolio
+        - link "About" [ref=e29] [cursor=pointer]:
+          - /url: /about
+        - link "Journal" [ref=e30] [cursor=pointer]:
+          - /url: /blog
+          - text: Journal
+        - link "Contact" [ref=e32] [cursor=pointer]:
+          - /url: /contact
+      - link "Start a project" [ref=e34] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e35]
+  - main [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: Journal
+        - generic [ref=e44]: Long-form, by the people who built it
+      - generic [ref=e45]:
+        - heading "Notes from the studio." [level=1] [ref=e46]:
+          - text: Notes from
+          - text: the studio.
+        - paragraph [ref=e47]: Engineering deep-dives, migration playbooks, the occasional opinion. Written by the engineers who shipped the work — not ghostwritten, not SEO-optimised, not on a content calendar.
+    - generic [ref=e49]:
+      - generic [ref=e51]:
+        - generic: Search
+        - searchbox "Search journal entries" [ref=e52]
+      - article [ref=e53]:
+        - link "How we migrated 9,000+ orders to Shopify, seamlessly Featured · most recent How we migrated 9,000+ orders to Shopify, seamlessly A step-by-step account of the legacy → Shopify migration we ran for a 9-figure DTC brand without dropping a single order or breaking a single SKU. The boring math of e-commerce migrations, and the spreadsheets we leaned on. August 25, 2025 1 min read" [ref=e54] [cursor=pointer]:
+          - /url: /blog/shopify-migration-9000-orders
+          - generic [ref=e55]:
+            - img "How we migrated 9,000+ orders to Shopify, seamlessly" [ref=e58]
+            - generic [ref=e60]:
+              - paragraph [ref=e61]: Featured · most recent
+              - heading "How we migrated 9,000+ orders to Shopify, seamlessly" [level=2] [ref=e62]
+              - paragraph [ref=e63]: A step-by-step account of the legacy → Shopify migration we ran for a 9-figure DTC brand without dropping a single order or breaking a single SKU. The boring math of e-commerce migrations, and the spreadsheets we leaned on.
+              - generic [ref=e64]:
+                - generic [ref=e65]: August 25, 2025
+                - generic [ref=e66]: ·
+                - generic [ref=e67]: 1 min read
+      - list [ref=e68]:
+        - listitem [ref=e69]:
+          - link "E-commerce store migration to Shopify, with the tools we use July 13, 2025 1 min read E-commerce store migration to Shopify, with the tools we use The migration playbook we now reach for by default — including the small set of tools that earn a place in our toolkit and the ones we quietly retired." [ref=e70] [cursor=pointer]:
+            - /url: /blog/ecommerce-migration-tools
+            - img "E-commerce store migration to Shopify, with the tools we use" [ref=e72]
+            - generic [ref=e74]:
+              - generic [ref=e75]: July 13, 2025
+              - generic [ref=e76]: ·
+              - generic [ref=e77]: 1 min read
+            - heading "E-commerce store migration to Shopify, with the tools we use" [level=3] [ref=e78]
+            - paragraph [ref=e79]: The migration playbook we now reach for by default — including the small set of tools that earn a place in our toolkit and the ones we quietly retired.
+        - listitem [ref=e80]:
+          - link "Unlocking the potential of AI in business April 24, 2024 1 min read Unlocking the potential of AI in business A grounded look at where LLMs actually move the needle for the kinds of mid-market businesses we usually work with — and where they only look like they do." [ref=e81] [cursor=pointer]:
+            - /url: /blog/ai-in-business
+            - img "Unlocking the potential of AI in business" [ref=e83]
+            - generic [ref=e85]:
+              - generic [ref=e86]: April 24, 2024
+              - generic [ref=e87]: ·
+              - generic [ref=e88]: 1 min read
+            - heading "Unlocking the potential of AI in business" [level=3] [ref=e89]
+            - paragraph [ref=e90]: A grounded look at where LLMs actually move the needle for the kinds of mid-market businesses we usually work with — and where they only look like they do.
+      - paragraph [ref=e91]:
+        - text: Note · entries above are the previous-site archive shown as placeholders. Once you connect Sanity at
+        - link "Open Sanity Studio to publish posts" [ref=e92] [cursor=pointer]:
+          - /url: /studio
+          - text: /studio
+        - text: and publish, real posts replace this list.
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - heading "Want one of these written about your project?" [level=2] [ref=e97]:
+          - text: Want one of these
+          - text: written about your project?
+        - paragraph [ref=e98]: We write up engagements after they ship — with the founder's blessing. Start one here.
+      - link "Start a project" [ref=e99] [cursor=pointer]:
+        - /url: /contact
+        - text: Start a project
+        - img [ref=e101]
+  - contentinfo:
+    - generic:
+      - generic: Mindcherry.
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - img "MindCherry" [ref=e106]
+          - paragraph [ref=e123]: MindCherry is a software house for ambitious founders. We sit with early and mid-stage teams to design, build, and grow custom software, MVPs, and the architecture they live on.
+          - generic [ref=e124]:
+            - link "Twitter" [ref=e125] [cursor=pointer]:
+              - /url: https://x.com/mindcherrytech
+              - generic [ref=e126]: T
+            - link "LinkedIn" [ref=e127] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindcherry/
+              - generic [ref=e128]: L
+            - link "Instagram" [ref=e129] [cursor=pointer]:
+              - /url: https://www.instagram.com/mindcherrytech/
+              - generic [ref=e130]: I
+            - link "Facebook" [ref=e131] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/mindcherry/61558165307631/
+              - generic [ref=e132]: F
+        - generic [ref=e133]:
+          - heading "Studio" [level=3] [ref=e134]
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - link "About" [ref=e137] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e138]:
+              - link "Journal" [ref=e139] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e140]:
+              - link "Careers" [ref=e141] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e142]:
+          - heading "Work" [level=3] [ref=e143]
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - link "Selected work" [ref=e146] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=e147]:
+              - link "Services" [ref=e148] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e149]:
+              - link "Process" [ref=e150] [cursor=pointer]:
+                - /url: /#process
+        - generic [ref=e151]:
+          - heading "Reach" [level=3] [ref=e152]
+          - list [ref=e153]:
+            - listitem [ref=e154]:
+              - link "hello@mindcherry.com" [ref=e155] [cursor=pointer]:
+                - /url: mailto:hello@mindcherry.com
+            - listitem [ref=e156]:
+              - link "Schedule a call" [ref=e157] [cursor=pointer]:
+                - /url: https://calendly.com/adeel-lwxw/30min
+            - listitem [ref=e158]:
+              - link "+923490290356" [ref=e159] [cursor=pointer]:
+                - /url: tel:+923490290356
+        - generic [ref=e160]:
+          - heading "Address" [level=3] [ref=e161]
+          - paragraph [ref=e162]:
+            - text: Main Boulevard, Block K Gulberg 3, Lahore
+            - generic [ref=e163]: PKT (UTC+5) · overlapping EU mornings & US afternoons.
+      - generic [ref=e164]:
+        - paragraph [ref=e165]: © 2026 MindCherry · all rights reserved
+        - generic [ref=e166]:
+          - link "Privacy" [ref=e167] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e168] [cursor=pointer]:
+            - /url: /terms
+  - button "Open Next.js Dev Tools" [ref=e174] [cursor=pointer]:
+    - img [ref=e175]
