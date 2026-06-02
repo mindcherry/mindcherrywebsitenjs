@@ -428,7 +428,7 @@ pnpm dev
 bun dev
 ```
 
-add the A and CNAME records
+add the A and CNAME records . 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
